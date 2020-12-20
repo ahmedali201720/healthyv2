@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Icon -->
+    <link rel="icon" href="assets/images/logo.jpg">
+    <!--  Local google fonts for page  -->
+    <link rel="stylesheet" href="css/font.css">
+    <!--  Local styles for page  -->
+    <link rel="stylesheet" href="css/home.css">
+    <!--  Responsive Local styles for page  -->
+    <link rel="stylesheet" href="css/home.responsive.css">
+    <!-- Bootstrap style sheet -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Style sheet for fontawesome assets -->
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+    <title>FAQ</title>
+</head>
+
+<body style="background-color: var(--branchBackColor);">
+
+
+    <!-- header section of home page -->
+    <header class="d-none d-md-block" id="main-header">
+
+        <div class="container-fluid main-container" id="main-container">
+            <div
+                class="row border-bottom d-flex justify-content-xl-between justify-content-lg-between justify-content-md-around mx-xl-5 mx-md-3">
+                <div class="row d-flex justify-content-start">
+                    <!-- Dropdown -->
+                    <div class="dropdown show language mx-xl-3 mx-lg-2 my-1">
+                        <a class="btn btn-secondary main-dropdown-item dropdown-toggle" href="#" role="button"
+                            id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            اللغة العربية <img class="mx-1" src="./assets/icons/egypt.png" width="15px" height="15px">
+                        </a>
+                        <div class="dropdown-menu lang-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">English <img src="./assets/icons/england.png" width="15px"
+                                    height="15px">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End of Dropdown -->
+                    <!-- Stat of top nav sections -->
+                    <div class="story with-border px-xl-3 px-lg-2 px-md-2 my-1">
+                        <a href="./story.html" target="_blank">قصتنا</a>
+                    </div>
+                    <div class="desc with-border px-xl-3 px-lg-2 px-md-2 my-1">
+                        <a href="#">الوصفات</a>
+                    </div>
+                    <div class="blog with-border px-xl-3 px-lg-2 px-md-2 my-1">
+                        <a href="#">المدونة</a>
+                    </div>
+                    <div class="branch with-border px-xl-3 px-lg-2 px-md-2 my-1">
+                        <a href="./branch.html">الفروع</a>
+                    </div>
+                    <div class="export with-border  px-xl-3 px-lg-2 px-md-2 my-1">
+                        <a href="#">تصدير</a>
+                    </div>
+                    <div class="policy with-border  px-xl-3 px-lg-2 px-md-2 my-1">
+                        <a href="./restore-policy.html" target="_blank">سياسة الإسترجاع</a>
+                    </div>
+                    <div class="contact px-xl-3 px-lg-2 px-md-3 my-1">
+                        <a href="./contact.html">إتصل بنا</a>
+                    </div>
+                </div>
+                <!-- end of top nav sections -->
+
+                <!-- Login sections -->
+                <!-- <div class="d-inline my-1 login-btn text-center px-md-1 px-lg-0">
+                    <a href="#" data-toggle="modal" data-target="#loginModal">تسجيل الدخول</a>
+                </div> -->
+
+                <div class="d-inline my-1 user-link text-center px-md-1 px-lg-0 position-relative d-none">
+
+                    <!-- user avatar and name -->
+                    <a href="#">أحمد على</a>
+                    <img src="./assets/ht-images/blank-person.png" width="30px" height="30px" alt="user">
+
+                    <!-- user options popup container -->
+                    <div class="user-options-container text-right position-absolute">
+                        <!-- Arrow up -->
+                        <div class="arrow-up-left"></div>
+                        <!-- user options label -->
+                        <p href="#" class="user-option-label mb-0 p-2 bg-success text-white">مرحبا بك فى موقعنا ،،
+                        </p>
+                        <!-- user options -->
+                        <a href="./profile.html" class="user-option py-2 d-block border-bottom">
+                            <i class="fa fa-user-cog mx-3"></i>الإعدادات
+                        </a>
+                        <a href="./address.html" class="user-option py-2 d-block border-bottom">
+                            <i class="fa fa-truck mx-3"></i>الطلبات السابقة
+                        </a>
+                        <a href="#" class="user-option py-2 d-block border-bottom">
+                            <i class="fa fa-star mx-3"></i>المفضلات
+                        </a>
+                        <a href="#" class="user-option py-2 d-block">
+                            <i class="fa fa-sign-out-alt mx-3"></i>تسجيل الخروج
+                        </a>
+                    </div>
+                    <!-- End of user option popup container -->
+                </div>
+                <!-- End of Login sections -->
+            </div>
+        </div>
+        <!-- End of top nav -->
+
+        <!-- Start of mid nav -->
+        <div class="container-fluid mid-container">
+            <div
+                class="row border-bottom d-flex justify-content-xl-start justify-content-md-around align-items-center mx-xl-5 mx-md-4">
+                <!--brand-->
+                <div class="main-brand col-2 my-1 text-right">
+                    <img src="./assets/images/logo.jpg" alt="logo" width="120" height="70">
+                </div>
+                <!--end brand-->
+                <!--searchbar-->
+                <div class="col-xl-9 col-lg-8 col-md-7 py-2 border-right border-left d-flex justify-content-center">
+                    <div class="search-bar-container w-75">
+                        <input class="form-control search-bar" type="search" placeholder="ابحث.." aria-label="Search">
+                        <i class="fa fa-search main-search-icon"></i>
+                    </div>
+                </div>
+                <!--end of search bar-->
+                <!--start of cart-->
+                <div class="col-xl-1 col-lg-2 col-md-3 shopping-cart-container  text-center position-relative">
+                    <i class="fa fa-shopping-cart navbar-cart-icon">
+                        <div class="cart-items" id="cart-items-number">
+                            100
+                        </div>
+                    </i>
+                    <div class="cart-label">
+                        سلة التسوق
+                    </div>
+
+                    <div class="shopping-cart-details-container position-absolute">
+
+                        <!-- Arrow up -->
+                        <div class="arrow-up-left"></div>
+                        <!-- Header -->
+                        <p class="shopping-cart-details-header d-block text-right px-2 py-1 mb-0"><img
+                                src="./assets/ht-images/leaf.png" alt="label" width="30" height="30"> بيانات الطلب
+                        </p>
+                        <!-- Cart items container -->
+                        <div class="row product-content-labels px-1 py-2 border-bottom align-items-center m-0">
+                            <div class="col-3 product-content-img-label">
+                                المنتج
+                            </div>
+                            <div class="col-6 product-content-text-label px-2">
+                                اسم المنتج
+                            </div>
+                            <div class="col-3 product-content-quantity-label">
+                                الكمية
+                            </div>
+                        </div>
+
+                        <div class="shopping-cart-contents">
+
+                            <div class="row product-content p-1 border-bottom align-items-center m-0">
+                                <div class="col-3 product-content-img position-relative">
+                                    <img src="./assets/ht-images/ouf1.png" width="50" height="50">
+                                </div>
+                                <div class="col-6 product-content-text px-2">
+                                    عرض عصير قراصيا 250 مل 1+1
+                                </div>
+                                <div class="col-3 flex-column">
+                                    <i class="fa fa-plus small-fa-plus main-cart-product-increment px-1"></i>
+                                    <div class="product-content-quantity main-cart-product-quantity">5</div>
+                                    <i class="fa fa-minus small-fa-minus main-cart-product-decrement px-1"></i>
+                                </div>
+                            </div>
+
+                            <div class="row product-content p-1 border-bottom align-items-center m-0">
+                                <div class="col-3 product-content-img position-relative">
+                                    <img src="./assets/ht-images/ouf1.png" width="50" height="50">
+                                </div>
+                                <div class="col-6 product-content-text px-2">
+                                    عرض عصير قراصيا 250 مل 1+1
+                                </div>
+                                <div class="col-3 flex-column">
+                                    <i class="fa fa-plus small-fa-plus main-cart-product-increment px-1"></i>
+                                    <div class="product-content-quantity main-cart-product-quantity">5</div>
+                                    <i class="fa fa-minus small-fa-minus main-cart-product-decrement px-1"></i>
+                                </div>
+                            </div>
+
+                            <div class="row product-content p-1 border-bottom align-items-center m-0">
+                                <div class="col-3 product-content-img position-relative">
+                                    <img src="./assets/ht-images/ouf1.png" width="50" height="50">
+                                </div>
+                                <div class="col-6 product-content-text px-2">
+                                    عرض عصير قراصيا 250 مل 1+1
+                                </div>
+                                <div class="col-3 flex-column">
+                                    <i class="fa fa-plus small-fa-plus px-1"></i>
+                                    <div class="product-content-quantity">5</div>
+                                    <i class="fa fa-minus small-fa-minus px-1"></i>
+                                </div>
+                            </div>
+
+                            <div class="row product-content p-1 border-bottom align-items-center m-0">
+                                <div class="col-3 product-content-img position-relative">
+                                    <img src="./assets/ht-images/ouf1.png" width="50" height="50">
+                                </div>
+                                <div class="col-6 product-content-text px-2">
+                                    عرض عصير قراصيا 250 مل 1+1
+                                </div>
+                                <div class="col-3 flex-column">
+                                    <i class="fa fa-plus small-fa-plus px-1"></i>
+                                    <div class="product-content-quantity">5</div>
+                                    <i class="fa fa-minus small-fa-minus px-1"></i>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="shopping-cart-details-footer">
+
+                            <div class="row justify-content-around align-items-center p-1 border-top m-0">
+                                <div class="col-6 footer-label px-2">
+                                    عدد المنتجات
+                                </div>
+                                <div class="col-6 footer-product-num">
+                                    20
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-around align-items-center p-1 border-top m-0">
+                                <div class="col-6 footer-label px-2">
+                                    سعر المنتجات
+                                </div>
+                                <div class="col-6 footer-price">
+                                    1800 <span>EGP</span>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-around align-items-center p-1 border-top m-0">
+                                <div class="col-12 add-to-cart-button p-2">
+                                    <a href="cart.html">
+                                        <button class="btn-sm btn-success">
+                                            اذهب إلى سلة التسوق
+                                        </button>
+                                        <i class="fa fa-hand-point-right mx-1 position-absolute"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-around align-items-center border-top p-1 m-0 bg-dark">
+                                <div class="col-6 add-to-cart-button p-0 normal-link-container border-left bg-dark">
+                                    <a class="normal-link" href="#"><i class="fa fa-shopping-cart"></i> تسوق سريـع</a>
+                                </div>
+                                <div class="col-6 add-to-cart-button p-0 normal-link-container bg-dark">
+                                    <!-- <a href="#"><i class="fa fa-sign-in-alt"></i> دخول مشترك</a> -->
+                                    <a href="#" class="normal-link"><i class="fa fa-sign-out-alt"></i> تسجيل الخروج</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--end of cart-->
+            </div>
+        </div>
+        <!-- End of mid nav -->
+
+        <!-- Start of main nav -->
+
+        <div class="container-fluid main-navbar">
+
+            <div class="row border-bottom d-flex justify-content-start px-xl-5 px-lg-4 ">
+
+                <div class="px-xl-4 px-lg-3 px-md-2 text-center border-right border-left py-lg-2 py-1">
+                    <i class="fa fa-home home-icon"></i>
+                    <a href="#" class="px-1">الرئيسية</a>
+                </div>
+                <div class="px-xl-4 px-lg-3  px-md-2 text-center border-right border-left py-lg-2 py-1">
+                    <img src="./assets/icons/percentage.png" width="25px" height="25px">
+                    <a href="offers.html" class="px-1">عروض و تخفيضات
+                    </a>
+                </div>
+                <div class="px-xl-4 px-lg-3 px-md-2 text-center border-right border-left py-lg-2 py-1">
+                    <a href="products.html">جميع المنتجات</a>
+                </div>
+                <div class="px-xl-4 px-lg-3 px-md-2 text-center border-right border-left py-lg-2 py-1">
+                    <a href="#">أفضل المبيعات</a>
+                </div>
+                <div
+                    class="caret-link-parent px-xl-4 px-lg-3 px-md-2 text-center border-right border-left py-lg-2 py-1">
+                    <a href="#" class="caret-link px-1" id="zabady">زبادى</a>
+                    <i class="fa fa-caret-down"></i>
+                    <div class="options-div-container">
+                        <div class="options-div">
+                            <a class="div-option-label" href="#">زبادى</a>
+                            <a class="div-option" href="#">منتج 1</a>
+                            <a class="div-option" href="#">منتج 1</a>
+                            <a class="div-option" href="#">منتج 1</a>
+                            <a class="div-option div-option-link" href="#">جميع منتجات الزبادى</a>
+                            <div class="arrow-up"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-xl-4 px-lg-3 px-md-2 text-center border-right border-left py-lg-2 py-1">
+                    <a href="#">ألبان</a>
+                </div>
+                <div class="px-xl-4 px-lg-3 px-md-2 text-center border-right border-left py-lg-2 py-1">
+                    <a href="#">مأكولات صحية</a>
+                </div>
+                <div class="px-xl-4 px-lg-3 px-md-2 text-center border-right border-left py-lg-2 py-1">
+                    <a href="#">من نحن</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- End of main nav -->
+
+    </header>
+
+    <!-- End of header section -->
+
+    <!-- Small screen header -->
+
+    <header class="d-block d-md-none bg-white w-100" id="small-screen-header">
+
+        <div class="container-fluid">
+
+            <div class="row d-flex justify-content-between align-items-center px-sm-5 px-3 py-sm-3 py-2 border-bottom">
+
+                <!-- Button collapse in right side -->
+                <div class="col-3 px-0 text-right pr-2">
+                    <button class="collapse-btn" onclick="openNav()">&#9776;</button>
+                </div>
+
+                <!-- logo in the middle in right side -->
+                <div class="col-5 main-brand my-1">
+                    <img src="./assets/images/logo.jpg" alt="logo" width="120" height="70">
+                </div>
+
+                <!-- Login Person and cart -->
+                <div class="col-4 d-flex justify-content-end align-items-center pl-2">
+
+                    <div class="blank-user mx-3 position-relative">
+
+                        <img src="./assets/ht-images/blank-person.png" width="40px" height="40px" alt="user">
+
+                        <!-- user options popup container -->
+                        <div class="small-user-options-container text-right position-absolute">
+                            <!-- Arrow up -->
+                            <div class="arrow-up-left"></div>
+                            <!-- user options label -->
+                            <p href="#" class="user-option-label mb-0 p-2 bg-success text-white">مرحبا بك فى موقعنا ،،
+                            </p>
+                            <!-- user options -->
+                            <a href="./profile.html" class="user-option py-2 d-block border-bottom">
+                                <i class="fa fa-user-cog mx-3"></i>الإعدادات
+                            </a>
+                            <a href="./address.html" class="user-option py-2 d-block border-bottom">
+                                <i class="fa fa-truck mx-3"></i>الطلبات السابقة
+                            </a>
+                            <a href="#" class="user-option py-2 d-block border-bottom">
+                                <i class="fa fa-star mx-3"></i>المفضلات
+                            </a>
+                            <a href="#" class="user-option py-2 d-block">
+                                <i class="fa fa-sign-out-alt mx-3"></i>تسجيل الخروج
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="small-shopping-cart-container text-center position-relative">
+
+                        <i class="fa fa-shopping-cart small-navbar-cart-icon">
+                            <div class="cart-items" id=" small-cart-items-number">
+                                100
+                            </div>
+                        </i>
+
+                        <div class="cart-label">
+                            سلة التسوق
+                        </div>
+
+                        <div class="small-shopping-cart-details-container position-absolute">
+
+                            <!-- Arrow up -->
+                            <div class="arrow-up-left"></div>
+                            <!-- Header -->
+                            <p class="shopping-cart-details-header d-block text-right px-2 py-1 mb-0"><img
+                                    src="./assets/ht-images/leaf.png" alt="label" width="30" height="30"> بيانات الطلب
+                            </p>
+                            <!-- Cart items container -->
+                            <div class="row product-content-labels px-1 py-2 border-bottom align-items-center m-0">
+                                <div class="col-3 product-content-img-label">
+                                    المنتج
+                                </div>
+                                <div class="col-6 product-content-text-label px-2">
+                                    اسم المنتج
+                                </div>
+                                <div class="col-3 product-content-quantity-label">
+                                    الكمية
+                                </div>
+                            </div>
+
+                            <div class="shopping-cart-contents">
+
+                                <div class="row product-content p-1 border-bottom align-items-center m-0">
+                                    <div class="col-3 product-content-img position-relative">
+                                        <img src="./assets/ht-images/ouf1.png" width="50" height="50">
+                                    </div>
+                                    <div class="col-6 product-content-text px-2">
+                                        عرض عصير قراصيا 250 مل 1+1
+                                    </div>
+                                    <div class="col-3 flex-column">
+                                        <i class="fa fa-plus small-fa-plus small-main-cart-product-increment px-1"></i>
+                                        <div class="product-content-quantity small-main-cart-product-quantity">5</div>
+                                        <i
+                                            class="fa fa-minus small-fa-minus small-main-cart-product-decrement px-1"></i>
+                                    </div>
+                                </div>
+
+                                <div class="row product-content p-1 border-bottom align-items-center m-0">
+                                    <div class="col-3 product-content-img position-relative">
+                                        <img src="./assets/ht-images/ouf1.png" width="50" height="50">
+                                    </div>
+                                    <div class="col-6 product-content-text px-2">
+                                        عرض عصير قراصيا 250 مل 1+1
+                                    </div>
+                                    <div class="col-3 flex-column">
+                                        <i class="fa fa-plus small-fa-plus px-1"></i>
+                                        <div class="product-content-quantity">5</div>
+                                        <i class="fa fa-minus small-fa-minus px-1"></i>
+                                    </div>
+                                </div>
+
+                                <div class="row product-content p-1 border-bottom align-items-center m-0">
+                                    <div class="col-3 product-content-img position-relative">
+                                        <img src="./assets/ht-images/ouf1.png" width="50" height="50">
+                                    </div>
+                                    <div class="col-6 product-content-text px-2">
+                                        عرض عصير قراصيا 250 مل 1+1
+                                    </div>
+                                    <div class="col-3 flex-column">
+                                        <i class="fa fa-plus small-fa-plus px-1"></i>
+                                        <div class="product-content-quantity">5</div>
+                                        <i class="fa fa-minus small-fa-minus px-1"></i>
+                                    </div>
+                                </div>
+
+                                <div class="row product-content p-1 border-bottom align-items-center m-0">
+                                    <div class="col-3 product-content-img position-relative">
+                                        <img src="./assets/ht-images/ouf1.png" width="50" height="50">
+                                    </div>
+                                    <div class="col-6 product-content-text px-2">
+                                        عرض عصير قراصيا 250 مل 1+1
+                                    </div>
+                                    <div class="col-3 flex-column">
+                                        <i class="fa fa-plus small-fa-plus px-1"></i>
+                                        <div class="product-content-quantity">5</div>
+                                        <i class="fa fa-minus small-fa-minus px-1"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="shopping-cart-details-footer">
+
+                                <div class="row justify-content-around align-items-center p-1 border-top m-0">
+                                    <div class="col-6 footer-label px-2">
+                                        عدد المنتجات
+                                    </div>
+                                    <div class="col-6 footer-product-num">
+                                        20
+                                    </div>
+                                </div>
+
+                                <div class="row justify-content-around align-items-center p-1 border-top m-0">
+                                    <div class="col-6 footer-label px-2">
+                                        سعر المنتجات
+                                    </div>
+                                    <div class="col-6 footer-price">
+                                        1800 <span>EGP</span>
+                                    </div>
+                                </div>
+
+                                <div class="row justify-content-around align-items-center p-1 border-top m-0">
+                                    <div class="col-12 add-to-cart-button p-2">
+                                        <button class="btn-sm btn-success">
+                                            اذهب إلى سلة التسوق
+                                        </button>
+                                        <i class="fa fa-hand-point-right mx-1 position-absolute"></i>
+                                    </div>
+                                </div>
+
+                                <div class="row justify-content-around align-items-center border-top p-1 m-0 bg-dark">
+                                    <div class="col-6 add-to-cart-button p-0 normal-link-container border-left bg-dark">
+                                        <a class="normal-link" href="#"><i class="fa fa-shopping-cart"></i> تسوق
+                                            سريـع</a>
+                                    </div>
+                                    <div class="col-6 add-to-cart-button p-0 normal-link-container bg-dark">
+                                        <!-- <a href="#"><i class="fa fa-sign-out-alt"></i> دخول مشترك</a> -->
+                                        <a class="normal-link" href="#"><i class="fa fa-sign-out-alt"></i> تسجيل
+                                            الخروج</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+    </header>
+
+    <!-- End of small screen header section -->
+
+    <!-- Fixed layer to show responsive header -->
+
+    <div id="small-navbar" class="small-navbar text-center">
+
+        <a href="javascript:void(0)" class="closebtn position-absolute" onclick="closeNav()">
+            <i class="fa fa-window-close"></i>
+        </a>
+
+        <!-- Dropdown -->
+        <div class="dropdown show language mx-xl-3 mx-lg-2 my-3">
+            <a class="btn btn-secondary main-dropdown-item dropdown-toggle" href="#" role="button"
+                id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                اللغة العربية <img class="mx-1" src="./assets/icons/egypt.png" width="15px" height="15px">
+            </a>
+            <div class="dropdown-menu lang-menu w-50 text-center" aria-labelledby="dropdownMenuLink2">
+                <a class="dropdown-item" href="#">English <img src="./assets/icons/england.png" width="15px"
+                        height="15px">
+                </a>
+            </div>
+        </div>
+        <!-- End of Dropdown -->
+
+        <a href="#">قصتنا</a>
+        <a href="#">الوصفات</a>
+        <a href="#">المدونة</a>
+        <a href="#">الفروع</a>
+        <a href="#">تصدير</a>
+        <a href="#">سياسة الإسترجاع</a>
+        <a href="#">اتصل بنا</a>
+        <a href="#">عروض و تخفيضات</a>
+        <a href="#">جميع المنتجات</a>
+        <a href="#">أفضل المبيعات</a>
+        <a href="#">زبـــادى</a>
+        <a href="#">ألبــــان</a>
+        <a href="#">مأكولات صحيـــة</a>
+
+    </div>
+
+    <!-- End of layout -->
+
+
+    <!-- Start of FAQ Section -->
+
+    <section id="faq">
+
+
+        <div class="container-fluid">
+
+
+
+            <div class="row faq-header-container my-5 mx-xl-5 mx-1">
+
+                <div class="section-labels w-100 text-center">
+                    <p class="main-label d-block mb-1">الاسئلة و الأجوبة الشائعة
+                    </p>
+                    <p class="sub-label mb-1">
+                        يتضمن الأسئلة الشائعة واجاباتها للبائع والمشترين وتقييم المنتجات وطرق الدفع والاستلام
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="faq-container flex-column justify-content-center align-items-center my-5">
+
+
+                <!-- Question -->
+                <div class="faq-question my-2 mx-auto">
+
+                    <div
+                        class="question-name d-flex justify-content-between align-items-center px-md-5 px-2 py-2 text-right">
+
+                        <p class="col-11 mb-0">ما هى طرق الدفع المتاحة لدينا ؟</p>
+                        <i class="col-1 fa fa-caret-down"></i>
+
+                    </div>
+
+                    <div class="question-answer px-5 justify-content-start align-items-center">
+
+                        <p class="mb-0 py-2 text-right">يمكنك الدفع من خلال بطاقات الائتمان للبنك الاهلى والعربى
+                            الافريقى او كاش
+                            عند
+                            الاستلام .</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Question -->
+                <div class="faq-question my-2 mx-auto">
+
+                    <div
+                        class="question-name d-flex justify-content-between align-items-center px-md-5 px-2 py-2 text-right">
+
+                        <p class="col-11 mb-0">ما هى طرق الدفع المتاحة لدينا ؟</p>
+                        <i class="col-1 fa fa-caret-down"></i>
+
+                    </div>
+
+                    <div class="question-answer px-5 justify-content-start align-items-center">
+
+                        <p class="mb-0 py-2 text-right">يمكنك الدفع من خلال بطاقات الائتمان للبنك الاهلى والعربى
+                            الافريقى او كاش
+                            عند
+                            الاستلام .</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Question -->
+                <div class="faq-question my-2 mx-auto">
+
+                    <div
+                        class="question-name d-flex justify-content-between align-items-center px-md-5 px-2 py-2 text-right">
+
+                        <p class="col-11 mb-0">ما هى طرق الدفع المتاحة لدينا ؟</p>
+                        <i class="col-1 fa fa-caret-down"></i>
+
+                    </div>
+
+                    <div class="question-answer px-5 justify-content-start align-items-center">
+
+                        <p class="mb-0 py-2 text-right">يمكنك الدفع من خلال بطاقات الائتمان للبنك الاهلى والعربى
+                            الافريقى او كاش
+                            عند
+                            الاستلام .</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Header FAQ -->
+
+            <div class="row faq-header-container my-lg-5 my-4 mx-xl-5 mx-2">
+
+                <div class="section-labels w-100 text-center">
+                    <p class="main-label d-block mb-1">هل لديك سؤال آخر ؟؟
+                    </p>
+                    <p class="sub-label mb-1">
+                        اذا لم تجد اجابة لسؤالك فيمكنك التواصل معنا عن طريق الاتصال بنا او من خلال كتابة سؤالك
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- FAQ Contact Container -->
+            <div class="row my-lg-5 my-3 mx-xl-5 mx-2 mb-lg-0 mb-5">
+
+                <div
+                    class="col-lg-5 col-12 faq-contact-optons-container flex-column justify-content-center align-items-center py-lg-0 py-3">
+
+                    <!-- Contact -->
+
+                    <div class="row mx-lg-0 mx-md-5 mx-2">
+
+                        <div class="faq-contact my-1 w-100">
+
+                            <div
+                                class="contact-name d-flex justify-content-between align-items-center px-md-5 px-2 py-2 text-right">
+
+                                <p class="col-11 mb-0"><i class="fab fa-whatsapp mx-2"></i> تواصل واتساب</p>
+                                <i class="col-1 fa fa-caret-down"></i>
+
+                            </div>
+
+                            <div
+                                class="contact-answer bg-white px-5 justify-content-between align-items-center text-success">
+
+                                <p class="mb-0 px-4 py-2 contact-answer-text">+201117698650
+                                </p>
+                                <i class="fa fa-copy copy-icon position-relative">
+                                    <div class="main-tooltip">تم نسخ الرقم</div>
+                                </i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Contact -->
+
+                    <div class="row mx-lg-0 mx-md-5 mx-2">
+
+                        <div class="faq-contact my-1 w-100">
+
+                            <div
+                                class="contact-name d-flex justify-content-between align-items-center px-md-5 px-2 py-2 text-right">
+
+                                <p class="col-11 mb-0"><i class="fa fa-phone mx-2"></i>
+                                    قم بالاتصال بنا</p>
+                                <i class="col-1 fa fa-caret-down"></i>
+
+                            </div>
+
+                            <div
+                                class="contact-answer bg-white px-5 justify-content-between align-items-center text-dark">
+
+                                <p class="mb-0 px-4 py-2 contact-answer-text position-relative">+201010668909
+                                </p>
+                                <i class="fa fa-copy copy-icon position-relative">
+                                    <div class="main-tooltip">تم نسخ الرقم</div>
+                                </i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Contact -->
+
+                    <div class="row mx-lg-0 mx-md-5 mx-2">
+
+                        <div class="faq-contact my-1 w-100">
+
+                            <div
+                                class="contact-name d-flex justify-content-between align-items-center px-md-5 px-2 py-2 text-right">
+
+                                <p class="col-11 mb-0"><i class="fab fa-facebook-messenger mx-2"></i> تواصل ماسنجر</p>
+                                <i class="col-1 fa fa-caret-down"></i>
+
+                            </div>
+
+                            <div
+                                class="contact-answer bg-white px-5 justify-content-between align-items-center text-info">
+
+                                <p class="mb-0 px-4 py-2 contact-answer-text position-relative">
+                                    <a class="contact-answer-link" href="https://www.messenger.com/" target="_blank">
+                                        ذهاب إلى المحادثة </a>
+                                </p>
+                                <i class="fa fa-copy copy-link position-relative">
+                                    <div class="main-tooltip">تم نسخ الرابط</div>
+                                </i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Contact -->
+
+                    <div class="row mx-lg-0 mx-md-5 mx-2">
+
+                        <div class="faq-contact my-1 w-100">
+
+                            <div
+                                class="contact-name d-flex justify-content-between align-items-center px-md-5 px-2 py-2 text-right">
+
+                                <p class="col-11 mb-0"><i class="fab fa-weixin mx-2"></i> تواصل وى شات</p>
+                                <i class="col-1 fa fa-caret-down"></i>
+
+                            </div>
+
+                            <div
+                                class="contact-answer bg-white px-5 justify-content-between align-items-center text-info">
+
+                                <p class="mb-0 px-4 py-2 contact-answer-text position-relative">
+                                    <a class="contact-answer-link" href="https://www.wechat.com/ar/" target="_blank">
+                                        ذهاب إلى المحادثة </a>
+                                </p>
+                                <i class="fa fa-copy copy-link position-relative">
+                                    <div class="main-tooltip">تم نسخ الرابط</div>
+                                </i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-7 col-12 faq-send-message-container">
+
+                    <!-- Row to show title of form -->
+
+                    <div class="row faq-header-container my-4 mx-xl-5 mx-1 d-lg-none d-block">
+
+                        <div class="section-labels w-100 text-center">
+                            <p class="main-label d-block mb-1">أو قم بالاتصال من هنا
+                            </p>
+                            <p class="sub-label mb-1">
+                                قم بكتابة بياناتك كالإيميل ورقم الموبايل ثم قم بكتابة استفسارك واضغط على زر الارسال
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <form class="bg-white mx-lg-0 mx-md-5 mx-2 p-4 text-right overflow-auto">
+
+
+                        <div class="form-row mb-2">
+                            <div class="col-12">
+                                <label for="label">الايميل</label>
+                                <input type="email" class="form-control" placeholder="ahmedalimohamed@gmail.com"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="form-row mb2">
+                            <div class="col-12">
+                                <label for="label">رقم الموبايل</label>
+                                <input type="text" class="form-control" placeholder="01010101010" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row mt-2">
+                            <div class="form-group col-12">
+                                <label for="message">الاستفسار</label>
+                                <textarea type="text" class="form-control" id="message"
+                                    placeholder="اكتب استفسارك هنا .." required>
+                                                </textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn w-50 float-left">إرســــال</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+    <!-- End of FAQ Section -->
+
+
+    <!-- Start of footer section -->
+
+    <footer id="footer">
+
+        <div class="container-fluid footer-container border-top">
+
+            <div class="row">
+
+                <div class="col-lg-5 col-md-6 col-12 border-left border-right px-5 py-3">
+                    <div class="footer-logo text-center">
+                        <img src="./assets/images/logo.jpg" width="185" height="90" alt="logo">
+                    </div>
+                    <div class="footer-text text-md-right text-center mt-4">
+                        أبو عوف هي علامة تجارية متخصصة في تقديم المأكولات الصحية بالجودة الأفضل والمعايير الأعلى حيث
+                        تمتلك الشركة قرابة 110 فرع
+                        في أنحاء مصر لبيع المنتجات بشكل مباشر في حين توزع الشركة منتجاتها لعدد كبير من الشركاء وتتوسع في
+                        تقديم الخدمة الأفضل
+                        وتوسيع نطاق وصول منتجاتها المميزة للباحثين عن الطعام الصحي عالي الجودة.
+                    </div>
+                    <div class="footer-form">
+                        <p class="footer-form-text text-right my-2">سجل في نشراتنا الشهرية لتصلك آخر أخبارنا و عروضنا
+                        </p>
+                        <form class="form-inline row d-md-flex flex-column justify-content-center">
+                            <div class="form-group mb-md-2 mb-1">
+                                <input type="text" class="form-control" id="footerEmail"
+                                    placeholder="من فضلك ادخل البريد الإلكترونى">
+                            </div>
+                            <button type="submit" class="footer-form-button mx-1">أرسل</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-6 col-12 border-right px-5 py-4">
+                    <div class="footer-products text-md-right text-center">
+                        <p class="footer-label mb-0">منتجات أبوعوف</p>
+                        <div class="footer-products-links my-1">
+                            <a class="footer-link p-x2" href="#">مكسرات</a>
+                            <a class="footer-link px-2" href="#">قهوة</a>
+                            <a class="footer-link px-2" href="#">أكل صحى</a>
+                            <a class="footer-link px-2" href="#">تمور و فواكه مجففة</a>
+                            <a class="footer-link px-2" href="#">حلويات أبو عوف</a>
+                            <a class="footer-link px-2" href="#">منتجات المطبخ</a>
+                            <a class="footer-link px-2" href="#">مشروبات</a>
+                        </div>
+                    </div>
+                    <div class="footer-company text-md-right text-center my-3">
+                        <p class="footer-label mb-0">الشركة</p>
+                        <div class="footer-products-links my-1">
+                            <a class="footer-link p-x2" href="#">قصة أبو عوف</a>
+                            <a class="footer-link px-2" href="#">الأسئلة الشائعة</a>
+                            <a class="footer-link px-2" href="#">فروعنا</a>
+                            <a class="footer-link px-2" href="#">الشروط و الأحكام</a>
+                            <a class="footer-link px-2" href="#">سياسة الإسترجاع</a>
+                        </div>
+                    </div>
+                    <div class="footer-payment-methods text-md-right text-center my-3">
+                        <p class="footer-label mb-0">الشركة</p>
+                        <div class="footer-products-images my-2">
+                            <img src="./assets/ht-images/cashondelivery.png" width="75" height="30">
+                            <img class="mx-2" src="./assets/ht-images/mastercard.png" width="46" height="36">
+                            <img class="mx-2" src="./assets/ht-images/visa.png" width="91" height="30">
+                            <img class="mx-2" src="./assets/ht-images/miza.png" width="37" height="26">
+                            <img class="mx-2" src="./assets/ht-images/africabank.png" width="168" height="30">
+                        </div>
+                    </div>
+                    <div class="footer-dial text-md-right text-center my-3">
+                        <p class="footer-label mb-1">اتصل بنا</p>
+                        <div class="dial text-md-right text-center">
+                            19969 <i class="fa fa-phone-alt px-2"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row d-flex justify-content-md-between justify-content-center border-top px-md-5 px-0">
+                <div class="col-md-6 col-12 made-by text-md-right text-center border-bottom">
+                    <a href="#">Online store powered by Almoasher business</a>
+                </div>
+                <div class="col-md-6 col-12 copyright text-md-left text-center">
+                    All copyrights belong to Healty & Tasty , 2021
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- End of footer section -->
+
+
+    <!-- Start of login modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+
+        <div class="modal-dialog" role="document">
+
+            <div class="modal-content">
+
+                <div class="modal-header p-0 text-center position-relative">
+                    <img src="./assets/ht-images/login-background.png" alt="login">
+                    <h5 class="modal-title position-absolute text-white" id="exampleModalLongTitle">تسجيل الدخول</h5>
+                    <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="login-as-wrapper d-flex justify-content-center align-items-center py-1">
+                    <div class="login-as-img">
+                        <img src="./assets/ht-images/ouf1.png" width="30" height="100%" alt="profile">
+                    </div>
+                    <div class="login-as text-white bg-primary text-center mx-1 my-1 px-3 py-1">
+                        <a class="text-white" href="#">Login as Ahmed Ali</a>
+                        <i class="fab fa-facebook-f text-primary bg-white px-1 py-1"></i>
+                    </div>
+                </div>
+
+                <div class=" modal-body border-top">
+
+                    <form class="bg-white p-lg-4 p-3 text-right">
+
+                        <div class="form-group">
+                            <label for="email">البريد الإلكترونى</label>
+                            <input type="email" class="form-control" id="email" placeholder="example@domain.com..">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mobile">الرقم السري</label>
+                            <input type="password" class="form-control" id="mobile" placeholder="ادخل الرقم السري..">
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100 login-btn">تسجيل الدخول</button>
+
+                    </form>
+
+                </div>
+
+                <div class="modal-footer d-flex justify-content-center">
+                    <a class="register-link" href="#">لا تملك حساب ؟ قم
+                        بتسجيل حساب جديد</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- End of login modal -->
+
+
+
+    <!-- Start of Register modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModal"
+        aria-hidden="true">
+
+        <div class="modal-dialog" role="document">
+
+            <div class="modal-content">
+
+                <div class="modal-header p-0 text-center position-relative">
+                    <img src="./assets/ht-images/login-background.png" alt="login">
+                    <h5 class="modal-title position-absolute text-white" id="exampleModalLongTitle">تسجيل حساب جديد</h5>
+                    <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="login-as-wrapper d-flex justify-content-center align-items-center py-1">
+                    <div class="login-as-img">
+                        <img src="./assets/ht-images/ouf1.png" width="30" height="100%" alt="profile">
+                    </div>
+                    <div class="login-as text-white bg-primary text-center mx-1 my-1 px-3 py-1">
+                        <a href="#" class="text-white">Continue as Ahmed Ali</a>
+                        <i class="fab fa-facebook-f text-primary bg-white px-1 py-1"></i>
+                    </div>
+                </div>
+
+                <div class=" modal-body border-top">
+
+                    <form class="bg-white p-lg-4 p-3 text-right">
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="fname">الإسم الأول</label>
+                                <input type="text" class="form-control" id="fname" placeholder="ادخل اسمك..">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="lname">اسم العائلة</label>
+                                <input type="text" class="form-control" id="lname" placeholder="الاسم الأخير ..">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">البريد الإلكترونى</label>
+                            <input type="email" class="form-control" id="email" placeholder="example@domain.com..">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pass">الرقم السري</label>
+                            <input type="password" class="form-control" id="pass" placeholder="كلمة السر..">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pass">اعادة الرقم السري</label>
+                            <input type="password" class="form-control" id="pass2" placeholder="كلمة السر..">
+                        </div>
+
+                        <div class="form-group col-md-12 px-0">
+                            <label for="mobile">رقم الموبايل</label>
+                            <input type="text" class="form-control" id="mobile" placeholder="ادخل رقم الهاتف">
+                        </div>
+
+                        <div class="form-group col-md-12 px-0">
+                            <label for="date">تاريخ الميلاد</label>
+                            <input type="date" class="form-control" id="date">
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100">تسجيل الحساب</button>
+
+                    </form>
+
+                </div>
+
+                <div class="modal-footer d-flex justify-content-center">
+                    <a class="login-link" href="#">دخول بحساب حالى</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- End of Register modal -->
+
+
+
+    <!-- Start of product modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModal"
+        aria-hidden="true">
+
+        <div class="modal-dialog product-modal-dialog ">
+
+            <div class="modal-content product-modal-content px-lg-4 px-2 py-5">
+                <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fa fa-window-close"></i></span>
+                </button>
+                <div class="row d-flex justify-content-around align-items-center">
+                    <div class="col-lg-5 col-md-6 col-12 product-modal-img-wrapper">
+                        <img src="./assets/ht-images/product-modal-1.jpg" alt="product">
+                    </div>
+
+                    <div class="col-lg-7 col-md-6 col-12 product-modal-details-wrapper text-right px-5">
+                        <div class="product-path text-lg-right text-center">
+                            <a href="#">جميع المنتجات</a>
+                            <i class="fa fa-arrow-left mx-1"></i>
+                            <a href="#">عروض و تخفيضات</a>
+                        </div>
+
+                        <div class="product-modal-title">
+                            عرض عصير قراصيا 250 مل 1+1 هدية
+                        </div>
+                        <div class="product-modal-sub-title">
+                            قسم عروض و تخفيضات
+                        </div>
+                        <hr class="product-modal-line">
+                        <div class="product-modal-price my-4"><span class="product-modal-currency">EGP</span>
+                            50
+                        </div>
+                        <div class="modal-footer-container d-lg-flex align-items-lg-center d-block">
+                            <!-- Appears when product not added to cart -->
+                            <div class="product-modal-button text-center">
+                                أضف للسلة
+                            </div>
+                            <!-- appears when product previously added to cart -->
+                            <div class="section-card-control-wrapper px-1">
+                                <!-- Increment to cart + quantity -->
+                                <div
+                                    class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                    <i class="fa fa-plus mx-1"></i>
+                                    <p class="product-quantity-in-card mb-0">2</p>
+                                </div>
+                                <!-- Decrement from cart -->
+                                <div
+                                    class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                    <i class="fa fa-minus"></i>
+                                </div>
+                            </div>
+                            <div
+                                class="modal-product-cart-info d-lg-inline-block d-block text-center mx-2 my-lg-0 my-2">
+                                <p class="mb-0">تم اضافة <span>3</span> عنصر الى السلة</p>
+                                <a class="mx-1" href="#"><i class="fa fa-shopping-cart"></i>ذهاب إلى السلة</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- End of product modal -->
+
+
+    <!--start of absolute cart-->
+    <div class="absolute-cart text-center d-flex justify-content-around align-items-center p-md-2 p-0">
+        <p class="absolute-cart-text m-0">
+            سلة التسوق
+        </p>
+        <i class="fa fa-shopping-cart absolute-cart-icon">
+            <div class="cart-items absolute-cart-items" id="absolute-cart-items-number">
+                100
+            </div>
+        </i>
+    </div>
+    <!--end of absolute cart-->
+
+
+
+    <!-- jquery script file needed for bootstrap -->
+    <script src="js/jquery-3.5.1.js"></script>
+    <!--  Local script for home page  -->
+    <script src="js/common.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/home.js"></script>
+    <!-- jquery script file needed for bootstrap -->
+    <script src="js/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap scripts -->
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

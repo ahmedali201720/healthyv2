@@ -1,0 +1,857 @@
+@import url("./common.css");
+/* ****************************************************************** */
+
+@media only screen and (max-width: 600px) {
+    /* Start of product modal styles */
+    .product-modal-img-wrapper img {
+        width: 150px;
+        height: 150px;
+    }
+    /* End of product modal styles */
+    /* Start of offer card styles */
+    .card {
+        width: 90% !important;
+        height: auto !important;
+    }
+    .offer-card {
+        width: 100% !important;
+        height: 380px !important;
+        max-height: 380px !important;
+    }
+    .card-img {
+        width: 50% !important;
+        height: auto !important;
+    }
+    .section-button {
+        width: 300px !important;
+    }
+    .section-labels {
+        width: 300px;
+        padding: 15px 15px;
+        border: 2px solid black;
+        border-radius: 6px;
+    }
+    .section-card-body {
+        height: 48%;
+    }
+    .section-card-text {
+        padding: 0px 15px;
+    }
+    .card-original-price-text {
+        font-size: 15px;
+        font-weight: 600;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .section-card-title {
+        padding: 25px 15px;
+        width: 100%;
+        height: 70%;
+        max-height: 70%;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 19px;
+        overflow: auto;
+    }
+    /* End of offer card styles */
+    .master-banner-video-wrapper {
+        height: 200px !important;
+    }
+    .feedback-details .feedback-name {
+        font-size: 16px;
+    }
+    .feedback-details .feedback-date {
+        font-size: 16px;
+    }
+    .footer-form form .form-group {
+        width: 100%;
+    }
+    .footer-form form input {
+        width: 100% !important;
+        font-size: 11px;
+        height: 32px;
+    }
+    .footer-form-button {
+        font-size: 11px;
+        width: 100%;
+        height: 32px;
+    }
+    /* Styles of absolute cart */
+    .absolute-cart {
+        width: 9%;
+        height: 60px;
+        bottom: 5%;
+        left: 3%;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+    .absolute-cart .fa-shopping-cart {
+        font-size: 25px !important;
+    }
+    .absolute-cart .cart-items {
+        font-size: 11px;
+        padding: 3px;
+    }
+    /* End of absolute cart styles */
+    /* Start of product modal styles */
+    .product-modal-title {
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 45px;
+    }
+    .product-modal-sub-title {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    .product-modal-price {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 23px;
+        color: var(--greenTextColor);
+    }
+    .product-modal-button {
+        width: 100% !important;
+        height: 50px;
+        line-height: 45px;
+    }
+    .modal-product-cart-info {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 15px;
+        color: black;
+    }
+    .modal-product-cart-info a:hover {
+        text-decoration: none;
+    }
+    /* End of product modal styles */
+    /* Start of cart details container */
+    .shopping-cart-details-container, .small-shopping-cart-details-container {
+        top: 115%;
+        left: 0%;
+        width: 85vw;
+    }
+    /* End of cart details container styles */
+    /* user options contaniner styles */
+    .user-options-container, .small-user-options-container {
+        top: 120% !important;
+        left: 1%;
+        width: 70vw;
+    }
+    /* End of user options contaniner styles */
+    /* Hand icon styles */
+    .add-to-cart-button .fa-hand-point-right {
+        display: none;
+    }
+    /* End of hand icon styles */
+    .personal-cart-action-container {
+        width: 100%;
+        height: fit-content !important;
+        position: fixed;
+        bottom: 0px;
+        z-index: 500;
+    }
+    .personal-product-cart-img img {
+        width: 50% !important;
+        height: auto !important;
+        border-radius: 10px;
+    }
+    .cart-increment-btn, .cart-decrement-btn {
+        width: 75%;
+    }
+    .section-labels {
+        border: 2px solid var(--mainOrange);
+        border-radius: 7px;
+    }
+    .cart-coupon-applying .form-group {
+        width: 100%;
+    }
+    #coupon-code {
+        width: 65%;
+        display: inline-block;
+        padding-top: 3px;
+    }
+    #apply-coupon {
+        font-size: 13px;
+        padding: 15px 5px !important;
+    }
+    .product-path {
+        border: 2px solid var(--mainOrange);
+        border-radius: 10px;
+    }
+    .page-title {
+        border: 2px solid var(--greenTextColor);
+        border-radius: 10px;
+    }
+    #month, #year {
+        width: 100%;
+    }
+    /* in checkout page */
+    .login-section-container {
+        font-size: 15px;
+    }
+    .single-product-section-label {
+        border: 2px solid var(--mainOrange);
+    }
+    /* FAQ */
+    .faq-question {
+        width: 100% !important;
+    }
+    /* End of FAQ */
+}
+
+@media only screen and (min-width: 600px) {
+    /* Start of product modal styles */
+    .product-modal-img-wrapper img {
+        width: 200px;
+        height: 200px;
+    }
+    /* End of product modal styles */
+    .card {
+        width: 100% !important;
+        height: auto !important;
+    }
+    /* Sections and cards styles */
+    .section-button {
+        width: auto !important;
+    }
+    .section-labels {
+        width: auto;
+        padding: 15px 15px;
+        border: none;
+    }
+    .section-card-body {
+        height: 45%;
+    }
+    .section-card-text {
+        padding: 0px 15px;
+    }
+    .card-original-price-text {
+        font-size: 12px;
+        font-weight: 600;
+        margin-right: 6px;
+        margin-left: 6px;
+    }
+    .section-card-title {
+        padding: 25px 15px;
+        width: 100%;
+        height: 70%;
+        max-height: 70%;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 19px;
+        overflow: auto;
+    }
+    .banner-card-container {
+        width: 95% !important;
+    }
+    .section-button, .section-labels {
+        width: 300px !important;
+    }
+    .master-banner-video-wrapper {
+        width: 100% !important;
+        height: 300px;
+    }
+    .offer-card {
+        width: 95% !important;
+        height: 345px !important;
+        max-height: 360px !important;
+    }
+    .card-img {
+        width: 60% !important;
+        height: auto !important;
+    }
+    .master-banner-video-wrapper {
+        height: 350px !important;
+    }
+    .feedback-details .feedback-name {
+        font-size: 16px;
+    }
+    .feedback-details .feedback-date {
+        font-size: 16px;
+    }
+    /* Styles of absolute cart */
+    .absolute-cart {
+        width: 9%;
+        height: 60px;
+        bottom: 5%;
+        left: 3%;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+    .absolute-cart .fa-shopping-cart {
+        font-size: 25px !important;
+    }
+    .absolute-cart .cart-items {
+        font-size: 11px;
+        padding: 3px;
+    }
+    /* End of absolute cart styles */
+    /* Start of cart details container */
+    .shopping-cart-details-container, .small-shopping-cart-details-container {
+        top: 115%;
+        left: 0%;
+        width: 70vw;
+    }
+    /* End of cart details container styles */
+    /* user options contaniner styles */
+    .user-options-container, .small-user-options-container {
+        top: 120% !important;
+        left: 1%;
+        width: 60vw;
+    }
+    /* End of user options contaniner styles */
+    /* Hand icon points to cart */
+    @keyframes animateHand {
+        0% {
+            left: 19%;
+        }
+        50% {
+            left: 22%
+        }
+        100% {
+            left: 19%;
+        }
+    }
+    /* End of hand icon styles */
+    .personal-cart-action-container {
+        width: 100%;
+        height: fit-content !important;
+    }
+    .personal-product-cart-img img {
+        width: 95% !important;
+        height: auto !important;
+        border-radius: 10px;
+    }
+    .cart-increment-btn, .cart-decrement-btn {
+        width: initial;
+    }
+    .section-labels {
+        border: 2px solid var(--mainOrange);
+        border-radius: 7px;
+    }
+    .cart-coupon-applying .form-group {
+        width: 100%;
+    }
+    #apply-coupon {
+        font-size: 16px;
+        padding: 10px 5px !important;
+    }
+    #month, #year {
+        width: 100%;
+    }
+    .single-product-section-label {
+        border: none;
+    }
+    /* FAQ */
+    .faq-question {
+        width: 95% !important;
+    }
+    /* End of FAQ */
+}
+
+@media only screen and (min-width: 667px) {
+    .footer-form form .form-group {
+        width: 100%;
+    }
+    .footer-form form input {
+        width: 100% !important;
+        font-size: 14px;
+        font-weight: 600;
+        height: 32px;
+    }
+    .footer-form-button {
+        font-size: 11px;
+        width: 100% !important;
+        height: 32px;
+    }
+    .product-modal-button {
+        width: 100% !important;
+    }
+    /* Start of cart details container */
+    .shopping-cart-details-container, .small-shopping-cart-details-container {
+        top: 115%;
+        left: 0%;
+        width: 50vw;
+    }
+    /* End of cart details container styles */
+    /* user options contaniner styles */
+    .user-options-container, .small-user-options-container {
+        top: 120% !important;
+        left: 1%;
+        width: 50vw;
+    }
+    .card-original-price-text {
+        font-size: 12px;
+        font-weight: 600;
+        margin-right: 6px;
+        margin-left: 6px;
+    }
+    /* End of user options contaniner styles */
+    /* Hand icon points to cart */
+    @keyframes animateHand {
+        0% {
+            left: 15%;
+        }
+        50% {
+            left: 18%
+        }
+        100% {
+            left: 15%;
+        }
+    }
+    /* End of hand icon styles */
+    .personal-cart-action-container {
+        width: 100%;
+        height: fit-content !important;
+    }
+    .section-labels {
+        border: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* Start of product modal styles */
+    .product-modal-img-wrapper img {
+        width: 200px;
+        height: 200px;
+    }
+    /* End of product modal styles */
+    /* Start of banner section styles */
+    .banner-card-container {
+        width: 95% !important;
+    }
+    /* End of banner sections styles */
+    .card {
+        width: 100% !important;
+        height: auto !important;
+    }
+    /* Start of offer card styles */
+    .card-img {
+        width: 60% !important;
+        height: auto !important;
+    }
+    .section-card-body {
+        height: 48%;
+    }
+    .section-card-text {
+        padding: 0px 15px;
+    }
+    .card-original-price-text {
+        font-size: 12px;
+        font-weight: 600;
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+    .section-card-title {
+        padding: 15px 15px;
+        width: 100%;
+        height: 70%;
+        max-height: 70%;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 19px;
+        overflow: auto;
+    }
+    /* End of offer card styles */
+    .section-button, .section-labels {
+        width: 280px !important;
+    }
+    .master-banner-video-wrapper {
+        height: 400px !important;
+    }
+    .feedback-details .feedback-name {
+        font-size: 13px;
+    }
+    .feedback-details .feedback-date {
+        font-size: 13px;
+    }
+    .footer-form form .form-group {
+        width: 100%;
+    }
+    .footer-form form input {
+        width: 100% !important;
+        font-size: 11px;
+        height: 32px;
+    }
+    .footer-form-button {
+        font-size: 11px;
+        width: 100%;
+        height: 32px;
+    }
+    /* Styles of absolute cart */
+    .absolute-cart {
+        width: 10%;
+        height: 70px;
+        bottom: 5%;
+        left: 3%;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+    .absolute-cart .fa-shopping-cart {
+        font-size: 28px !important;
+    }
+    .absolute-cart .cart-items {
+        font-size: 11px;
+        padding: 3px;
+    }
+    /* End of absolute cart styles */
+    /* Start of product modal styles */
+    .product-modal-button {
+        width: 100% !important;
+    }
+    /* End of product modal styles */
+    /* Start of cart details container */
+    .shopping-cart-details-container, .small-shopping-cart-details-container {
+        top: 100%;
+        left: 30%;
+        width: 60vw;
+    }
+    /* End of cart details container styles */
+    /* user options contaniner styles */
+    .user-options-container, .small-user-options-container {
+        top: 120% !important;
+        left: 1%;
+        width: 40vw;
+    }
+    /* End of user options contaniner styles */
+    /* Styles of hand icons */
+    @keyframes animateHand {
+        0% {
+            left: 22%;
+        }
+        50% {
+            left: 26%
+        }
+        100% {
+            left: 22%;
+        }
+    }
+    .personal-cart-action-container {
+        width: 100%;
+        height: fit-content !important;
+    }
+    /* End of hand icon styles */
+    .personal-cart-label {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .personal-cart-total-price {
+        font-size: 16px;
+    }
+    .cart-coupon-applying .form-group {
+        width: 100%;
+    }
+    #apply-coupon {
+        font-size: 16px;
+        padding: 10px 5px !important;
+    }
+    .product-path {
+        border: none;
+    }
+    .page-title {
+        border: none;
+    }
+    /* FAQ */
+    .faq-question {
+        width: 80% !important;
+    }
+    /* End of FAQ */
+}
+
+@media only screen and (min-width: 850px) {
+    .section-card-body {
+        height: 45%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* Start of product modal styles */
+    .product-modal-img-wrapper img {
+        width: 300px;
+        height: 300px;
+    }
+    /* End of product modal styles */
+    .banner-card-container {
+        width: 100% !important;
+    }
+    /* Start of offer card styles */
+    .section-card-body {
+        height: 50%;
+    }
+    .section-card-title {
+        width: 100%;
+        height: 60%;
+        max-height: 70%;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 19px;
+        overflow: auto;
+    }
+    /* End of offer card styles */
+    .master-banner-video-wrapper {
+        height: auto !important;
+    }
+    .feedback-details .feedback-name {
+        font-size: 13px;
+    }
+    .feedback-details .feedback-date {
+        font-size: 13px;
+    }
+    .footer-form form .form-group {
+        width: 100%;
+    }
+    /* Styles of absolute cart */
+    .absolute-cart {
+        width: 14%;
+        height: 80px;
+        bottom: 5%;
+        left: 3%;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+    .absolute-cart .fa-shopping-cart {
+        font-size: 35px !important;
+    }
+    .absolute-cart .cart-items {
+        font-size: 14px;
+        padding: 3px;
+    }
+    /* End of absolute cart styles */
+    /* Product modal */
+    .product-modal-button {
+        width: 50% !important;
+    }
+    /* End of product modal */
+    /* Start of cart details container */
+    .shopping-cart-details-container, .small-shopping-cart-details-container {
+        top: 100%;
+        left: 25%;
+        width: 40vw;
+    }
+    /* End of cart details container styles */
+    /* user options contaniner styles */
+    .user-options-container, .small-user-options-container {
+        top: 120% !important;
+        left: 1%;
+        width: 20vw;
+    }
+    /* End of user options contaniner styles */
+    .personal-cart-action-container {
+        width: 98%;
+    }
+    .personal-cart-label {
+        font-size: 13px;
+        font-weight: 700;
+    }
+    .personal-cart-total-price {
+        font-size: 14px;
+    }
+    .personal-cart-label {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .personal-cart-total-price {
+        font-size: 14px;
+    }
+    #apply-coupon {
+        font-size: 16px;
+        padding: 10px 5px !important;
+    }
+    #month, #year {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .section-card-body {
+        height: 45%;
+    }
+    .personal-cart-action-container {
+        width: 95%;
+        height: fit-content !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* Styles for branch page */
+    .branch-card {
+        min-width: 400px;
+    }
+    /* End of branch page styles */
+    /* Start of product modal styles */
+    .product-modal-img-wrapper img {
+        width: 360px;
+        height: 360px;
+    }
+    /* End of product modal styles */
+    /* Start of banner section styles */
+    .banner-card-container {
+        width: 90% !important;
+    }
+    /* End of banner sections styles */
+    /* Start of offer card styles */
+    .card-img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .section-card-body {
+        height: 43% !important;
+    }
+    .section-card-text {
+        padding: 0px 10px;
+        font-size: 14px;
+    }
+    .section-card-title {
+        padding: 10px 10px;
+        width: 100%;
+        height: 65%;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 19px;
+        overflow: auto;
+    }
+    .card-original-price-text {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    /* End of offer card styles */
+    .feedback-details .feedback-name {
+        font-size: 8px;
+    }
+    .feedback-details .feedback-date {
+        font-size: 10px;
+    }
+    .footer-form form .form-group {
+        width: 100%;
+    }
+    .footer-form form input {
+        width: 100% !important;
+        font-size: 13px;
+        height: 32px;
+    }
+    .footer-form-button {
+        font-size: 13px;
+        width: 100%;
+        height: 32px;
+    }
+    /* Start of cart details container */
+    .shopping-cart-details-container, .small-shopping-cart-details-container {
+        top: 100%;
+        left: 25%;
+        width: 35vw;
+    }
+    /* End of cart details container styles */
+    /* user options contaniner styles */
+    .user-options-container, .small-user-options-container {
+        top: 120% !important;
+        left: 1%;
+        width: 17vw;
+    }
+    /* End of user options contaniner styles */
+    /* Styles of hand icons */
+    @keyframes animateHand {
+        0% {
+            left: 20%;
+        }
+        50% {
+            left: 24%
+        }
+        100% {
+            left: 20%;
+        }
+    }
+    /* End of hand icon styles */
+    .personal-cart-action-container {
+        width: 95%;
+        height: fit-content !important;
+    }
+    .personal-cart-label {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .personal-cart-total-price {
+        font-size: 14px;
+    }
+    #coupon-code {
+        width: 70%;
+    }
+    #month, #year {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    /* Start of offer card styles */
+    .card-img {
+        width: auto !important;
+        height: auto !important;
+    }
+    .section-card-text {
+        padding: 0px 12px;
+    }
+    .section-card-title {
+        padding: 12px 12px;
+        width: 100%;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 19px;
+        overflow: auto;
+    }
+    /* End of offer card styles */
+    .feedback-details .feedback-name {
+        font-size: 10px;
+    }
+    .feedback-details .feedback-date {
+        font-size: 10px;
+    }
+    /* user options contaniner styles */
+    .user-options-container, .small-user-options-container {
+        top: 120% !important;
+        left: 1%;
+        width: 18vw;
+    }
+    /* End of user options contaniner styles */
+    /* Styles of hand icons */
+    @keyframes animateHand {
+        0% {
+            left: 22%;
+        }
+        50% {
+            left: 26%
+        }
+        100% {
+            left: 22%;
+        }
+    }
+    /* End of hand icon styles */
+    .personal-cart-action-container {
+        width: 95%;
+        height: fit-content !important;
+    }
+    .personal-cart-label {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .personal-cart-total-price {
+        font-size: 14px;
+    }
+    #coupon-code {
+        width: 70%;
+    }
+    #month, #year {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    .small-shopping-cart-details-container {
+        height: 70vh;
+        max-height: 70vh;
+        overflow: auto;
+    }
+}

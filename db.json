@@ -1,0 +1,32 @@
+{
+  "coupons": [
+    {
+      "id": 1,
+      "value": "ahmed2020",
+      "discount_percent": 5,
+      "expiration_date": "30-12-2020"
+    },
+    {
+      "id": 2,
+      "value": "sayed2020",
+      "discount_percent": 8,
+      "expiration_date": "20-10-2020"
+    },
+    {
+      "id": 3,
+      "value": "mostafa2020",
+      "discount_percent": 8,
+      "expiration_date": "20-10-2021"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "comments": {
+    "content": "20"
+  }
+}

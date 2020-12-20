@@ -1,0 +1,136 @@
+@import url("./common.css");
+/* ****************************************************************** */
+
+/* Start of checkout page styles */
+
+.personal-details-container-tab {
+    border: 2px solid var(--mainOrange);
+    border-radius: 30px;
+}
+
+.personal-detalils-tab-item {
+    border: 2px solid var(--mainOrange);
+    border-radius: 30px;
+    width: 100%;
+}
+
+.personal-detalils-tab-item:hover {
+    cursor: pointer;
+}
+
+.tab-item-selected {
+    background-color: var(--mainOrange) !important;
+    color: white !important;
+}
+
+.tab-item-not-selected {
+    background-color: white;
+    color: var(--mainOrange) !important;
+}
+
+.personal-data-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.personal-data-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+#city, #region {
+    width: 100%;
+}
+
+#store-branch {
+    width: 40%;
+}
+
+.cadeau-data-container, .shipping-data-container, .charging-data-container, .payment-data-container {
+    font-size: 16px;
+}
+
+.cadeau-data-container {
+    display: none;
+}
+
+.checkout-action-container {
+    width: 95%;
+    height: fit-content !important;
+}
+
+.checkout-control-footer {
+    background-color: var(--mainOrange) !important;
+    color: white;
+}
+
+.checkout-price {
+    color: white !important;
+    font-size: 16px;
+}
+
+.point-info-link {
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.fa-percent {
+    color: white;
+    background-color: var(--greenTextColor);
+    border-radius: 50%;
+}
+
+#month, #year {
+    width: 46%;
+}
+
+#checkout-section select, #checkout-section input, #checkout-section textarea {
+    border: 2px solid var(--mainOrange);
+    border-radius: 5px;
+    padding: 5px 20px;
+    color: var(--mainOrange);
+    font-weight: 600;
+}
+
+#checkout-section select:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.personal-details-container-header {
+    color: white;
+    background-color: var(--mainOrange);
+}
+
+.personal-data-header, .shipping-data-header {
+    background-color: var(--mainOrange);
+}
+
+.branch-address {
+    color: var(--mainOrange);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.checkout-facebook {
+    background-color: blue !important;
+    color: white;
+    font-weight: 700;
+}
+
+.checkout-facebook:hover {
+    background-color: rgb(128, 128, 245) !important;
+    color: white;
+    cursor: pointer;
+}
+
+.checkout-login-avatar img {
+    border: 2px solid blue;
+}
+
+#charging-address-form {
+    display: none;
+}
+
+/* End of checkout page styles */

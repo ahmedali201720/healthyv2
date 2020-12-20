@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Icon -->
+    <link rel="icon" href="assets/images/logo.jpg">
+    <!--  Local google fonts for page  -->
+    <link rel="stylesheet" href="css/font.css">
+    <!--  Local styles for page  -->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <!--  Responsive Local styles for page  -->
+    <link rel="stylesheet" href="css/home.responsive.css">
+    <!-- Bootstrap style sheet -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Style sheet for fontawesome assets -->
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+    <title>Profile</title>
+</head>
+
+<body style="background-color: var(--branchBackColor);">
+
+    <!-- header section of checkout page -->
+
+    <header class="d-none d-md-block">
+
+        <!-- Start of main nav -->
+
+        <div class="container-fluid mid-container">
+
+            <div class="row border-bottom d-flex justify-content-around align-items-center mx-xl-5 mx-md-4">
+                <!--brand-->
+                <div class="main-brand col-8 my-1 text-center">
+                    <a href="home.html"><img src="./assets/images/logo.jpg" alt="logo" width="120" height="70"></a>
+                </div>
+                <!--end brand-->
+
+                <!--start of cart-->
+                <div class="col-4 shopping-cart-container text-center">
+
+                    <i class="fa fa-shopping-cart navbar-cart-icon">
+                        <div class="cart-items" id="cart-items-number">
+                            100
+                        </div>
+                    </i>
+
+                    <div class="cart-label">
+                        سلة التسوق
+                    </div>
+
+                </div>
+                <!--end of cart-->
+            </div>
+        </div>
+        <!-- End of mid nav -->
+
+    </header>
+
+    <!-- End of header section -->
+
+    <!-- Small screen header -->
+
+    <header class="d-block d-md-none bg-white w-100" id="small-screen-header">
+
+        <div class="container-fluid">
+
+            <div class="row d-flex justify-content-between align-items-center px-sm-5 px-3 py-sm-3 py-2">
+
+                <!-- logo in the middle in right side -->
+                <div class="col-5 main-brand my-1">
+                    <img src="./assets/images/logo.jpg" alt="logo" width="120" height="70">
+                </div>
+
+                <!-- cart -->
+                <div class="col-4 d-flex justify-content-end align-items-center pl-2">
+
+                    <div class="small-shopping-cart-container text-center">
+
+                        <i class="fa fa-shopping-cart small-navbar-cart-icon">
+                            <div class="cart-items" id="small-cart-items-number">
+                                100
+                            </div>
+                        </i>
+
+                        <div class="cart-label">
+                            سلة التسوق
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+    </header>
+
+    <!-- End of small screen header section -->
+
+
+    <!-- Start of cart section -->
+
+
+    <section id="profile-section">
+
+
+        <div class="container-fluid">
+
+
+            <!-- Row to display header of profile page -->
+
+            <div class="row cart-header-container my-md-4 my-4 mx-5">
+
+                <div
+                    class="section-labels w-100 d-flex align-items-center justify-content-md-start justify-content-center">
+                    <img class="user-profile-img" src="./assets/images/logo.jpg" alt="profile" width="80" height="80">
+                    <div class="profile-title mx-2 text-md-right text-center">
+                        <p class="mb-0 header">مرحبا Ahmed</p>
+                        <p class="mb-0 text">هنا يمكنك متابعة جميع بيانات حسابك</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Line -->
+            <div class="row mx-xl-5 mx-2 d-md-flex d-none">
+                <hr class="restore-policy-line my-0">
+            </div>
+
+            <!-- Row to display profile control div -->
+
+            <div class="row mx-5 my-md-5 my-3">
+
+                <div class="col-lg-3 col-12 px-lg-3 px-0 mb-3">
+
+                    <div class="profile-controller-container text-lg-right text-center">
+
+                        <p class="profile-controller-title px-3 py-1 mb-0">
+                            حسابى
+                        </p>
+
+                        <a href="#" class="profile-controller-option d-block px-3 py-1">
+                            طلباتى السابقة
+                        </a>
+
+                        <a href="#" class="profile-controller-option d-block px-3 py-1">
+                            عنوان الشحن
+                        </a>
+
+                        <a href="#" class="profile-controller-option d-block px-3 py-1 category-active">
+                            بيانات الحساب
+                        </a>
+
+                        <a href="#" class="profile-controller-option d-block  px-3 py-1">
+                            تسجيل الخروج
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Column to display profile content (past orders) -->
+                <div class="col-lg-9 col-12 px-5 py-3 order-details-container bg-white rounded d-none">
+
+                    <div class="row order-details px-3 py-md-2 py-3 my-1 align-items-center text-center rounded">
+
+                        <p class="col-md-1 col-12 order-number mb-0 d-md-block d-none">01</p>
+                        <p class="col-md-3 col-12 order-date mb-0">11/11/2020</p>
+                        <p class="col-md-3 col-12 order-price mb-0">50 <span>EGP</span></p>
+                        <p class="col-md-3 col-12 order-status mb-0">تم التوصيل</p>
+                        <div class="col-md-2 col-12 d-flex justify-content-center mt-md-0 mt-3">
+                            <a href="#" class="mx-lg-3 mx-2"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="mx-lg-3 mx-2"><i class="fa fa-trash"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="row order-details px-3 py-md-2 py-3 my-1 align-items-center text-center rounded">
+
+                        <p class="col-md-1 col-12 order-number mb-0 d-md-block d-none">01</p>
+                        <p class="col-md-3 col-12 order-date mb-0">11/11/2020</p>
+                        <p class="col-md-3 col-12 order-price mb-0">50 <span>EGP</span></p>
+                        <p class="col-md-3 col-12 order-status mb-0">تم التوصيل</p>
+                        <div class="col-md-2 col-12 d-flex justify-content-center mt-md-0 mt-3">
+                            <a href="#" class="mx-lg-3 mx-2"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="mx-lg-3 mx-2"><i class="fa fa-trash"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="row order-details px-3 py-md-2 py-3 my-1 align-items-center text-center rounded">
+
+                        <p class="col-md-1 col-12 order-number mb-0 d-md-block d-none">01</p>
+                        <p class="col-md-3 col-12 order-date mb-0">11/11/2020</p>
+                        <p class="col-md-3 col-12 order-price mb-0">50 <span>EGP</span></p>
+                        <p class="col-md-3 col-12 order-status mb-0">تم التوصيل</p>
+                        <div class="col-md-2 col-12 d-flex justify-content-center mt-md-0 mt-3">
+                            <a href="#" class="mx-lg-3 mx-2"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="mx-lg-3 mx-2"><i class="fa fa-trash"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="row order-details px-3 py-md-2 py-3 my-1 align-items-center text-center rounded">
+
+                        <p class="col-md-1 col-12 order-number mb-0 d-md-block d-none">01</p>
+                        <p class="col-md-3 col-12 order-date mb-0">11/11/2020</p>
+                        <p class="col-md-3 col-12 order-price mb-0">50 <span>EGP</span></p>
+                        <p class="col-md-3 col-12 order-status mb-0">تم التوصيل</p>
+                        <div class="col-md-2 col-12 d-flex justify-content-center mt-md-0 mt-3">
+                            <a href="#" class="mx-lg-3 mx-2"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="mx-lg-3 mx-2"><i class="fa fa-trash"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="row alert alert-danger px-3 py-2 my-1 text-center">
+                        لا يوجد طلبات قمت بطلبها من عندنا مسبقاُ
+                    </div>
+
+                </div>
+
+                <!-- Column to display profile content (shipping address) -->
+                <div class="col-lg-9 col-12 px-5 pt-3 pb-4 profile-address-details-container bg-white d-none">
+
+                    <div class="row justify-content-end profile-address-main-icon py-2">
+                        <a href="#">ذهاب لصفحة العناوين <i class="fa fa-edit"></i></a>
+                    </div>
+
+                    <div
+                        class="row profile-address-details px-3 py-2 my-1 align-items-center jsutify-content-md-around justify-content-between rounded">
+
+                        <p class="col-md-1 address-serial mb-0 d-md-block d-none">01</p>
+                        <p class="col-lg-9 col-6 address-gist mb-0">الغابة الشجرية - مدينة الوفاء والأمل، الحي العاشر،
+                            مدينة
+                            نصر،، Al Wafaa WA Al Amal, Nasr City, Cairo Governorate, Egypt</p>
+                        <div class="col-lg-2 col-md-5 col-6 d-flex justify-content-lg-center justify-content-end">
+                            <a href="#"><i class="fa fa-eye mx-2"></i></a>
+                            <a href="#"><i class="fa fa-trash mx-2"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="row profile-address-details px-3 py-2 my-1 align-items-center jsutify-content-md-around justify-content-between rounded">
+
+                        <p class="col-md-1 address-serial mb-0 d-md-block d-none">01</p>
+                        <p class="col-lg-9 col-6 address-gist mb-0">الغابة الشجرية - مدينة الوفاء والأمل، الحي العاشر،
+                            مدينة
+                            نصر،، Al Wafaa WA Al Amal, Nasr City, Cairo Governorate, Egypt</p>
+                        <div class="col-lg-2 col-md-5 col-6 d-flex justify-content-lg-center justify-content-end">
+                            <a href="#"><i class="fa fa-eye mx-2"></i></a>
+                            <a href="#"><i class="fa fa-trash mx-2"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="row profile-address-details px-3 py-2 my-1 align-items-center jsutify-content-md-around justify-content-between rounded">
+
+                        <p class="col-md-1 address-serial mb-0 d-md-block d-none">01</p>
+                        <p class="col-lg-9 col-6 address-gist mb-0">الغابة الشجرية - مدينة الوفاء والأمل، الحي العاشر،
+                            مدينة
+                            نصر،، Al Wafaa WA Al Amal, Nasr City, Cairo Governorate, 201 Egypt</p>
+                        <div class="col-lg-2 col-md-5 col-6 d-flex justify-content-lg-center justify-content-end">
+                            <a href="#"><i class="fa fa-eye mx-2"></i></a>
+                            <a href="#"><i class="fa fa-trash mx-2"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="row alert alert-danger px-3 py-2 my-1 justify-content-center align-items-center">
+                        لم تقم بتحديد العنوان مسبقاُ ، هل تريد تحديده الان ؟ <a href="#" class="mx-2">تحديد العنوان</a>
+                    </div>
+
+                </div>
+
+                <!-- Column to display profile content (user registration data) -->
+                <div class="col-lg-9 col-md-8 col-12 px-5 py-3 profile-info-details-container bg-white">
+
+                    <div class="row profile-info-header justify-content-center text-white px-3 py-3 mt-2 mb-3">
+                        بيانات الحساب
+                    </div>
+
+                    <div class="row profile-info-details py-2 my-1 align-items-center text-right rounded">
+
+                        <form class="w-100">
+                            <div class="form-row">
+                                <div class="form-group col-md-6 col-12">
+                                    <label for="fname">الإسم الأول</label>
+                                    <input type="text" class="form-control" id="fname" placeholder="اسمك.." required>
+                                </div>
+                                <div class="form-group col-md-6 col-12">
+                                    <label for="lname">إسم العائلة</label>
+                                    <input type="text" class="form-control" id="lname" placeholder="الاسم الاخير .."
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">البريد الإلكترونى</label>
+                                <input type="email" class="form-control" id="email" placeholder="example@domain.com.."
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mobile">رقم الموبايل</label>
+                                <input type="text" class="form-control" id="mobile" placeholder="01010111213" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mobile">تاريخ الميلاد</label>
+                                <input type="date" class="form-control" id="birthdate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">كلمة السر القديمة</label>
+                                <input type="password" class="form-control" id="old-pass" placeholder="******" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">كلمة السر الجديدة</label>
+                                <input type="password" class="form-control" id="new-pass" placeholder="******" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">أعد كتابة كلمة السر الجديدة</label>
+                                <input type="password" class="form-control" id="new-pass-rep" placeholder="******"
+                                    required>
+                            </div>
+
+                            <button type="submit" class="btn btn-success float-left">تحديث البيانات</button>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- End of cart section -->
+
+
+    <!-- Start of footer section -->
+
+    <footer id="footer">
+
+        <div class="container-fluid footer-container border-top">
+
+            <div class="row">
+
+                <div class="col-lg-5 col-md-6 col-12 border-left border-right px-5 py-3">
+                    <div class="footer-logo text-center">
+                        <img src="./assets/images/logo.jpg" width="185" height="90" alt="logo">
+                    </div>
+                    <div class="footer-text text-md-right text-center mt-4">
+                        أبو عوف هي علامة تجارية متخصصة في تقديم المأكولات الصحية بالجودة الأفضل والمعايير الأعلى حيث
+                        تمتلك الشركة قرابة 110 فرع
+                        في أنحاء مصر لبيع المنتجات بشكل مباشر في حين توزع الشركة منتجاتها لعدد كبير من الشركاء وتتوسع في
+                        تقديم الخدمة الأفضل
+                        وتوسيع نطاق وصول منتجاتها المميزة للباحثين عن الطعام الصحي عالي الجودة.
+                    </div>
+                    <div class="footer-form">
+                        <p class="footer-form-text text-right my-2">سجل في نشراتنا الشهرية لتصلك آخر أخبارنا و عروضنا
+                        </p>
+                        <form class="form-inline row d-md-flex flex-column justify-content-center">
+                            <div class="form-group mb-md-2 mb-1">
+                                <input type="text" class="form-control" id="footerEmail"
+                                    placeholder="من فضلك ادخل البريد الإلكترونى">
+                            </div>
+                            <button type="submit" class="footer-form-button mx-1">أرسل</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-6 col-12 border-right px-5 py-4">
+                    <div class="footer-products text-md-right text-center">
+                        <p class="footer-label mb-0">منتجات أبوعوف</p>
+                        <div class="footer-products-links my-1">
+                            <a class="footer-link p-x2" href="#">مكسرات</a>
+                            <a class="footer-link px-2" href="#">قهوة</a>
+                            <a class="footer-link px-2" href="#">أكل صحى</a>
+                            <a class="footer-link px-2" href="#">تمور و فواكه مجففة</a>
+                            <a class="footer-link px-2" href="#">حلويات أبو عوف</a>
+                            <a class="footer-link px-2" href="#">منتجات المطبخ</a>
+                            <a class="footer-link px-2" href="#">مشروبات</a>
+                        </div>
+                    </div>
+                    <div class="footer-company text-md-right text-center my-3">
+                        <p class="footer-label mb-0">الشركة</p>
+                        <div class="footer-products-links my-1">
+                            <a class="footer-link p-x2" href="#">قصة أبو عوف</a>
+                            <a class="footer-link px-2" href="#">الأسئلة الشائعة</a>
+                            <a class="footer-link px-2" href="#">فروعنا</a>
+                            <a class="footer-link px-2" href="#">الشروط و الأحكام</a>
+                            <a class="footer-link px-2" href="#">سياسة الإسترجاع</a>
+                        </div>
+                    </div>
+                    <div class="footer-payment-methods text-md-right text-center my-3">
+                        <p class="footer-label mb-0">الشركة</p>
+                        <div class="footer-products-images my-2">
+                            <img src="./assets/ht-images/cashondelivery.png" width="75" height="30">
+                            <img class="mx-2" src="./assets/ht-images/mastercard.png" width="46" height="36">
+                            <img class="mx-2" src="./assets/ht-images/visa.png" width="91" height="30">
+                            <img class="mx-2" src="./assets/ht-images/miza.png" width="37" height="26">
+                            <img class="mx-2" src="./assets/ht-images/africabank.png" width="168" height="30">
+                        </div>
+                    </div>
+                    <div class="footer-dial text-md-right text-center my-3">
+                        <p class="footer-label mb-1">اتصل بنا</p>
+                        <div class="dial text-md-right text-center">
+                            <i class="fa fa-phone px-2"></i>19969
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row d-flex justify-content-md-between justify-content-center border-top px-md-5 px-0">
+                <div class="col-md-6 col-12 made-by text-md-right text-center border-bottom">
+                    <a href="#">Online store powered by Almoasher business</a>
+                </div>
+                <div class="col-md-6 col-12 copyright text-md-left text-center">
+                    All copyrights belong to Healty & Tasty , 2021
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- End of footer section -->
+
+
+    <!-- jquery script file needed for bootstrap -->
+    <script src="js/jquery-3.5.1.js"></script>
+    <!--  Local script for home page  -->
+    <script src="js/common.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/checkout.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/css.js"></script>
+    <!-- jquery script file needed for bootstrap -->
+    <script src="js/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap scripts -->
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

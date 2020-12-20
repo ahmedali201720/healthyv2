@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Icon -->
+    <link rel="icon" href="assets/images/logo.jpg">
+    <!--  Local google fonts for page  -->
+    <link rel="stylesheet" href="css/font.css">
+    <!--  Local styles for page  -->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/address.css">
+    <!--  Responsive Local styles for page  -->
+    <link rel="stylesheet" href="css/home.responsive.css">
+    <!-- Bootstrap style sheet -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Style sheet for fontawesome assets -->
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+    <title>Locations</title>
+</head>
+
+<body style="background-color: var(--branchBackColor);">
+
+    <!-- header section of checkout page -->
+
+    <header class="d-none d-md-block">
+
+        <!-- Start of main nav -->
+
+        <div class="container-fluid mid-container">
+
+            <div class="row border-bottom d-flex justify-content-around align-items-center mx-xl-5 mx-md-4">
+                <!--brand-->
+                <div class="main-brand col-8 my-1 text-center">
+                    <a href="home.html"><img src="./assets/images/logo.jpg" alt="logo" width="120" height="70"></a>
+                </div>
+                <!--end brand-->
+
+                <!--start of cart-->
+                <div class="col-4 shopping-cart-container text-center">
+
+                    <i class="fa fa-shopping-cart navbar-cart-icon">
+                        <div class="cart-items" id="cart-items-number">
+                            100
+                        </div>
+                    </i>
+
+                    <div class="cart-label">
+                        سلة التسوق
+                    </div>
+
+                </div>
+                <!--end of cart-->
+            </div>
+        </div>
+        <!-- End of mid nav -->
+
+    </header>
+
+    <!-- End of header section -->
+
+    <!-- Small screen header -->
+
+    <header class="d-block d-md-none bg-white w-100" id="small-screen-header">
+
+        <div class="container-fluid">
+
+            <div class="row d-flex justify-content-between align-items-center px-sm-5 px-3 py-sm-3 py-2">
+
+                <!-- logo in the middle in right side -->
+                <div class="col-5 main-brand my-1">
+                    <img src="./assets/images/logo.jpg" alt="logo" width="120" height="70">
+                </div>
+
+                <!-- cart -->
+                <div class="col-4 d-flex justify-content-end align-items-center pl-2">
+
+                    <div class="small-shopping-cart-container text-center">
+
+                        <i class="fa fa-shopping-cart small-navbar-cart-icon">
+                            <div class="cart-items" id="small-cart-items-number">
+                                100
+                            </div>
+                        </i>
+
+                        <div class="cart-label">
+                            سلة التسوق
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+    </header>
+
+    <!-- End of small screen header section -->
+
+
+    <!-- Start of cart section -->
+
+
+    <section id="pick-address-section">
+
+
+        <div class="container-fluid">
+
+
+            <!-- Row to display header of location page -->
+
+            <div class="row cart-header-container location-header-container my-5 mx-5">
+
+                <div class="section-labels w-100 text-center">
+                    <p class="main-label d-block mb-1">تحديد المواقع
+                    </p>
+                    <p class="sub-label mb-1">العنوان الذى يتم اختياره سيتحدد على اساسه الفرع الاقرب إليك و المنتجات
+                        المتاحة لك
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Row to display options of previous regisered locations -->
+
+            <div class="row previous-addresses-container justify-content-center align-items-center mx-5 my-4 py-5">
+
+                <div class="col-lg-7 col-12">
+
+                    <div class="form-group mb-0 text-right">
+                        <label for="message">هل أي من هذه العناوين تتطابق معك ؟</label>
+                        <select id="region" name="region" class="w-100">
+                            <option value="dokki">الدقى</option>
+                            <option value="kafrsaad">كفر سعد</option>
+                            <option value="belbis">بلبيس</option>
+                            <option value="mitghamr">ميت غمر</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Row to display subheader of checkout page -->
+
+            <div class="row cart-header-container my-3 mx-5">
+
+                <div class="section-labels w-100 text-center">
+                    <p class="main-label d-block mb-1">أو قم باضافة عنوان جديد
+                    </p>
+                    <p class="sub-label mb-1">العنوان يمكن تحديده من الخريطة أو كتابته يدويا
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Row to display map of location page -->
+
+            <div class="row location-map-container my-3 mx-5 py-5 justify-content-center align-items-center">
+
+                <div class="col-lg-7 col-12">
+
+                    <div class="text-right mb-md-3 md-2">
+                        <input type="text" class="form-control" id="customer-location-input"></input>
+                    </div>
+
+                    <div id="map">
+                        <!-- Added by js -->
+                    </div>
+
+                </div>
+
+                <div class="col-7 col-12">
+
+                    <form class=" my-4">
+
+                        <div class="form-row justify-content-center">
+                            <div class="form-group col-lg-7 col-12 text-right">
+                                <label for="message">العنوان بالتفصيل</label>
+                                <input type="text" class="form-control" placeholder="تفاصيل أكثر عن العنوان..">
+                            </div>
+                        </div>
+
+                        <div class="form-row justify-content-center">
+                            <div class="form-group col-lg-7 col-12 text-right">
+                                <label for="message">رقم الهاتف</label>
+                                <input type="text" class="form-control" placeholder="01010101010">
+                            </div>
+                        </div>
+
+                        <div class="form-row justify-content-center">
+                            <div class="col-lg-7 col-12 d-flex justify-content-between">
+                                <div class="form-group d-inline-block text-right col-5 px-0">
+                                    <label for="fname">رقم الشقة</label>
+                                    <input type="text" class="form-control" id="fname" placeholder="ادخل رقم شقتك..">
+                                </div>
+                                <div class="form-group d-inline-block text-right col-5 px-0">
+                                    <label for="lname">رقم المبنى</label>
+                                    <input type="text" class="form-control" id="lname" placeholder="ادخل رقم المبنى ..">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row justify-content-center" class="">
+                            <div class="col-lg-7 col-12">
+                                <button type="submit" class="btn btn-success w-100 mt-5 mb-2">
+                                    تحديد الموقع <i class="fa fa-location-arrow mx-1"></i></button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- End of cart section -->
+
+
+    <!-- Start of footer section -->
+
+    <footer id="footer">
+
+        <div class="container-fluid footer-container border-top">
+
+            <div class="row">
+
+                <div class="col-lg-5 col-md-6 col-12 border-left border-right px-5 py-3">
+                    <div class="footer-logo text-center">
+                        <img src="./assets/images/logo.jpg" width="185" height="90" alt="logo">
+                    </div>
+                    <div class="footer-text text-md-right text-center mt-4">
+                        أبو عوف هي علامة تجارية متخصصة في تقديم المأكولات الصحية بالجودة الأفضل والمعايير الأعلى حيث
+                        تمتلك الشركة قرابة 110 فرع
+                        في أنحاء مصر لبيع المنتجات بشكل مباشر في حين توزع الشركة منتجاتها لعدد كبير من الشركاء وتتوسع في
+                        تقديم الخدمة الأفضل
+                        وتوسيع نطاق وصول منتجاتها المميزة للباحثين عن الطعام الصحي عالي الجودة.
+                    </div>
+                    <div class="footer-form">
+                        <p class="footer-form-text text-right my-2">سجل في نشراتنا الشهرية لتصلك آخر أخبارنا و عروضنا
+                        </p>
+                        <form class="form-inline row d-md-flex flex-column justify-content-center">
+                            <div class="form-group mb-md-2 mb-1">
+                                <input type="text" class="form-control" id="footerEmail"
+                                    placeholder="من فضلك ادخل البريد الإلكترونى">
+                            </div>
+                            <button type="submit" class="footer-form-button mx-1">أرسل</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-6 col-12 border-right px-5 py-4">
+                    <div class="footer-products text-md-right text-center">
+                        <p class="footer-label mb-0">منتجات أبوعوف</p>
+                        <div class="footer-products-links my-1">
+                            <a class="footer-link p-x2" href="#">مكسرات</a>
+                            <a class="footer-link px-2" href="#">قهوة</a>
+                            <a class="footer-link px-2" href="#">أكل صحى</a>
+                            <a class="footer-link px-2" href="#">تمور و فواكه مجففة</a>
+                            <a class="footer-link px-2" href="#">حلويات أبو عوف</a>
+                            <a class="footer-link px-2" href="#">منتجات المطبخ</a>
+                            <a class="footer-link px-2" href="#">مشروبات</a>
+                        </div>
+                    </div>
+                    <div class="footer-company text-md-right text-center my-3">
+                        <p class="footer-label mb-0">الشركة</p>
+                        <div class="footer-products-links my-1">
+                            <a class="footer-link p-x2" href="#">قصة أبو عوف</a>
+                            <a class="footer-link px-2" href="#">الأسئلة الشائعة</a>
+                            <a class="footer-link px-2" href="#">فروعنا</a>
+                            <a class="footer-link px-2" href="#">الشروط و الأحكام</a>
+                            <a class="footer-link px-2" href="#">سياسة الإسترجاع</a>
+                        </div>
+                    </div>
+                    <div class="footer-payment-methods text-md-right text-center my-3">
+                        <p class="footer-label mb-0">الشركة</p>
+                        <div class="footer-products-images my-2">
+                            <img src="./assets/ht-images/cashondelivery.png" width="75" height="30">
+                            <img class="mx-2" src="./assets/ht-images/mastercard.png" width="46" height="36">
+                            <img class="mx-2" src="./assets/ht-images/visa.png" width="91" height="30">
+                            <img class="mx-2" src="./assets/ht-images/miza.png" width="37" height="26">
+                            <img class="mx-2" src="./assets/ht-images/africabank.png" width="168" height="30">
+                        </div>
+                    </div>
+                    <div class="footer-dial text-md-right text-center my-3">
+                        <p class="footer-label mb-1">اتصل بنا</p>
+                        <div class="dial text-md-right text-center">
+                            <i class="fa fa-phone px-2"></i>19969
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row d-flex justify-content-md-between justify-content-center border-top px-md-5 px-0">
+                <div class="col-md-6 col-12 made-by text-md-right text-center border-bottom">
+                    <a href="#">Online store powered by Almoasher business</a>
+                </div>
+                <div class="col-md-6 col-12 copyright text-md-left text-center">
+                    All copyrights belong to Healty & Tasty , 2021
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- End of footer section -->
+
+
+    <!-- jquery script file needed for bootstrap -->
+    <script src="js/jquery-3.5.1.js"></script>
+    <!--  Local script for home page  -->
+    <script src="js/common.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/address.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/cart.js"></script>
+    <!-- jquery script file needed for bootstrap -->
+    <script src="js/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB03MSNIAgLLoHmcVIX1ONMkDrS0ksXfvE&libraries=places&v=weekly"></script>
+    <!-- bootstrap scripts -->
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

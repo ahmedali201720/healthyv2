@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Icon -->
+    <link rel="icon" href="assets/images/logo.jpg">
+    <!--  Local google fonts for page  -->
+    <link rel="stylesheet" href="css/font.css">
+    <!--  Local styles for page  -->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <!--  Responsive Local styles for page  -->
+    <link rel="stylesheet" href="css/home.responsive.css">
+    <!-- Bootstrap style sheet -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Style sheet for fontawesome assets -->
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+    <title>Cart</title>
+</head>
+
+<body style="background-color: var(--branchBackColor);">
+
+    <!-- header section of checkout page -->
+
+    <header class="d-none d-md-block">
+
+        <!-- Start of main nav -->
+
+        <div class="container-fluid mid-container">
+
+            <div class="row border-bottom d-flex justify-content-around align-items-center mx-xl-5 mx-md-4">
+                <!--brand-->
+                <div class="main-brand col-8 my-1 text-center">
+                    <a href="home.html"><img src="./assets/images/logo.jpg" alt="logo" width="120" height="70"></a>
+                </div>
+                <!--end brand-->
+
+                <!--start of cart-->
+                <div class="col-4 shopping-cart-container text-center">
+
+                    <i class="fa fa-shopping-cart navbar-cart-icon">
+                        <div class="cart-items" id="cart-items-number">
+                            100
+                        </div>
+                    </i>
+
+                    <div class="cart-label">
+                        سلة التسوق
+                    </div>
+
+                </div>
+                <!--end of cart-->
+            </div>
+        </div>
+        <!-- End of mid nav -->
+
+    </header>
+
+    <!-- End of header section -->
+
+    <!-- Small screen header -->
+
+    <header class="d-block d-md-none bg-white w-100" id="small-screen-header">
+
+        <div class="container-fluid">
+
+            <div class="row d-flex justify-content-between align-items-center px-sm-5 px-3 py-sm-3 py-2">
+
+                <!-- logo in the middle in right side -->
+                <div class="col-5 main-brand my-1">
+                    <img src="./assets/images/logo.jpg" alt="logo" width="120" height="70">
+                </div>
+
+                <!-- cart -->
+                <div class="col-4 d-flex justify-content-end align-items-center pl-2">
+
+                    <div class="small-shopping-cart-container text-center">
+
+                        <i class="fa fa-shopping-cart small-navbar-cart-icon">
+                            <div class="cart-items" id="small-cart-items-number">
+                                100
+                            </div>
+                        </i>
+
+                        <div class="cart-label">
+                            سلة التسوق
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+    </header>
+
+    <!-- End of small screen header section -->
+
+
+    <!-- Start of cart section -->
+
+
+    <section id="checkout-section">
+
+
+        <div class="container-fluid">
+
+
+            <!-- Row to display header of checkout page -->
+
+            <div class="row cart-header-container my-3 mx-xl-5 mx-2">
+
+                <div class="section-labels w-100 text-center">
+                    <p class="main-label d-block mb-1">أدفع أونلاين أو كاش عند الإستلام
+                    </p>
+                    <p class="sub-label mb-1">التوصيل خلال 24 ساعه في القاهره والجيزه
+                        والاسكندريه اما باقي المحافظات
+                        خلال 72 ساعه
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Row to display alerts of checkout page -->
+            <div class="row cart-alert-container my-3 mx-xl-5 mx-2">
+
+                <div class="alert alert-danger w-100 text-md-right text-center" role="alert">
+                    هناك عروض فى سلة التسوق لم تعد متاحة ، من فضلك قم بعملية التحديث
+                </div>
+
+            </div>
+
+            <!-- Row to display customer details and cart side containers -->
+            <div class="row personal-checkout-details-container justify-content-between flex-wrap my-3 mx-xl-5 mx-2">
+
+                <!-- Column of checkout details -->
+
+                <div class="col-lg-8 col-md-12 p-0">
+
+                    <div class="personal-details-container bg-white">
+
+                        <!-- Row for not logged in -->
+
+                        <div class="d-flex justify-content-start personal-details-container-header py-2 my-2">
+                            <p class="mb-0 px-5 font-weight-bold">تسجيل الدخول</p>
+                        </div>
+
+                        <div class="login-section-container mx-5 py-2 text-right">
+                            <div class=" my-2">
+                                <p class="mb-0 font-weight-bold d-inline-block">هل لديك حساب ؟</p>
+                                <a href="#" class="mb-0 px-2 font-weight-bold">قم بتسجيل الدخول ؟</a>
+                            </div>
+                            <div class="d-flex my-3">
+                                <div class="col-1 checkout-login-avatar px-0 d-flex justify-content-end">
+                                    <img src="./assets/ht-images/mid-banner-1.png" width="40" height="100%">
+                                </div>
+                                <div
+                                    class="col-md-6 col-12 checkout-facebook d-flex justify-content-center align-items-center px-0 py-2">
+                                    <i class="fab fa-facebook mx-1"></i>
+                                    Continue with facebook
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Row for container header -->
+
+                        <div class="d-flex justify-content-start personal-details-container-header mb-5 py-2">
+                            <p class="mb-0 px-5 font-weight-bold">نوع الطلب</p>
+                        </div>
+
+                        <!-- Row for container tab -->
+
+                        <div class="row justify-content-start personal-details-container-tab px-2 py-2 mx-4">
+
+                            <div class="col-6 d-flex justify-content-center">
+                                <div class="personal-detalils-tab-item home-item tab-item-selected text-center py-2 ">
+                                    <i class="fa fa-home mx-1"></i>
+                                    وصل الطلب لعنوانى
+                                </div>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-center">
+                                <div
+                                    class="personal-detalils-tab-item cadeau-item tab-item-not-selected text-center py-2 ">
+                                    <i class="fa fa-gift mx-1"></i>
+                                    وصل الطلب هدية
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Row for cadeau data form -->
+
+                        <div class="cadeau-data-container px-2 py-3 mx-4 text-right border-bottom">
+
+                            <form class="bg-white p-lg-4 p-3">
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmail4">الاسم الكامل لمستلم الهدية</label>
+                                        <input type="text" class="form-control" id="cadeau-name" placeholder="الاسم..">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputPassword4">رقم موبايل مستلم الهدية</label>
+                                        <input type="text" class="form-control" id="cadeau-phone"
+                                            placeholder="رقم الهاتف">
+                                    </div>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                        <!-- Row for personal data -->
+
+                        <div class="personal-data-container py-4 text-right border-bottom">
+
+                            <div class="personal-data-header my-4 px-5 py-2 text-white font-weight-bolder">بيانات
+                                العميل
+                            </div>
+
+                            <div class="personal-data-logged-in">
+
+                                <div class="personal-data my-2 mx-5">
+                                    <p class="personal-data-title mb-1">الإســم</p>
+                                    <p class="personal-data-text">Ahmed Ali</p>
+                                </div>
+
+                                <div class="personal-data my-2 mx-5">
+                                    <p class="personal-data-title mb-1">البريد الإلكترونى</p>
+                                    <p class="personal-data-text">ahmedalimohamed1994@gmail.com</p>
+                                </div>
+
+                                <div class="personal-data my-2 mx-5">
+                                    <p class="personal-data-title mb-1">الهاتف</p>
+                                    <p class="personal-data-text">01010668909</p>
+                                </div>
+                            </div>
+
+                            <div class="personal-data-logged-out d-none">
+
+                                <form class="bg-white mx-5">
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="fname">الإسم الأول</label>
+                                            <input type="text" class="form-control" id="fname" placeholder="اسمك..">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="lname">إسم العائلة</label>
+                                            <input type="text" class="form-control" id="lname"
+                                                placeholder="الاسم الاخير ..">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">البريد الإلكترونى</label>
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="example@domain.com..">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="mobile">رقم الموبايل</label>
+                                        <input type="text" class="form-control" id="mobile" placeholder="01010111213">
+                                    </div>
+
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Row for Shipping data form -->
+
+                        <div class="shipping-data-container py-4 text-right border-bottom">
+
+                            <div class="shipping-data-header mt-4 mb-2 px-5 py-2 font-weight-bolder text-white">عنوان
+                                الشحن
+                            </div>
+
+                            <!-- Row for container tab -->
+
+                            <div class="row justify-content-start address-details-container-tab px-2 py-2 mx-4 mt-4">
+
+                                <div class="col-6 d-flex justify-content-center">
+                                    <div
+                                        class="personal-detalils-tab-item registered-address-item tab-item-selected text-center py-2 ">
+                                        <i class="fa fa-registered mx-1"></i>
+                                        وصل الطلب لعنوانى
+                                    </div>
+                                </div>
+
+                                <div class="col-6 d-flex justify-content-center">
+                                    <div
+                                        class="personal-detalils-tab-item another-address-item tab-item-not-selected text-center py-2 ">
+                                        <i class="fa fa-reply mx-1"></i>
+                                        عنوان آخر
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Row for cadeau data form -->
+
+                            <div id="charging-address-form">
+
+                                <form class="bg-white mx-5 my-4">
+
+                                    <div class="form-row">
+                                        <div class="form-group col-12 position-relative">
+                                            <label for="label">المدينة</label>
+                                            <select id="city" name="city">
+                                                <option value="cairo">القاهرة</option>
+                                                <option value="daiemietta">دمياط</option>
+                                                <option value="sharqya">الشرقية</option>
+                                                <option value="mansoura">المنصورة</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-12">
+                                            <label for="label">المنطقة</label>
+                                            <select id="region" name="region">
+                                                <option value="dokki">الدقى</option>
+                                                <option value="kafrsaad">كفر سعد</option>
+                                                <option value="belbis">بلبيس</option>
+                                                <option value="mitghamr">ميت غمر</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row mb-2">
+                                        <div class="col-9">
+                                            <label for="label">رقم العقار و اسم الشارع</label>
+                                            <input type="text" class="form-control" placeholder="رقم عقار و اسم شارعك">
+                                        </div>
+                                        <div class="col-3">
+                                            <label for="label">رقم الشقة</label>
+                                            <input type="text" class="form-control" placeholder="رقم شقتك">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-12">
+                                            <label for="message">ملاحظات</label>
+                                            <textarea type="text" class="form-control" id="message"
+                                                placeholder="اكتب رسالتك هنا">
+                                                                        </textarea>
+                                        </div>
+                                    </div>
+
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Row for Charging data -->
+
+                        <div class="charging-data-container py-4 text-right border-bottom">
+
+                            <div class="shipping-data-header mt-4 mb-2 py-2 font-weight-bolder text-white px-5">طريقة
+                                الشحن
+                            </div>
+
+                            <form class="bg-white mx-5 my-4">
+
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-between">
+                                        <div class="form-check">
+                                            <input class="mx-2" type="radio" name="gridRadios" id="gridRadios1"
+                                                value="option1" checked>
+                                            <label class="form-check-label" for="gridRadios1">
+                                                الاستلام عند باب المنزل
+                                            </label>
+                                        </div>
+                                        <div class="ship-to-home-price text-danger font-weight-bolder"
+                                            for="gridRadios1">
+                                            100 <span>EGP</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="mx-2" type="radio" name="gridRadios" id="gridRadios1"
+                                                value="option1" checked>
+                                            <label class="form-check-label" for="gridRadios1">
+                                                الاستلام من فرع ابو عوف
+                                            </label>
+                                            <select id="store-branch" name="region" class="mx-1 py-1">
+                                                <option value="volvo">الدقى</option>
+                                                <option value="saab">كفر سعد</option>
+                                                <option value="fiat">بلبيس</option>
+                                                <option value="audi">ميت غمر</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 branch-address mx-4 mt-2">
+                                        العنوان: ١٠٥ شارع السيد المرغني، مصر الجديدة بجوار تورتينا الحلوانى
+                                        <a href="branch.html" class="mx-4">احصل على الإتجاهات</a>
+                                    </div>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                        <!-- Row for payment data -->
+
+                        <div class="payment-data-container py-4 text-right border-bottom">
+
+                            <div class="shipping-data-header my-4 py-3 px-5 font-weight-bolder text-white">طريقة الدفع
+                            </div>
+
+                            <form class="bg-white py-1 px-5">
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-check d-flex justify-content-start align-items-center">
+                                            <input class="mx-2" type="radio" name="credit" id="credit" value="credit"
+                                                checked>
+                                            <label class="form-check-label" for="gridRadios1">
+                                                الدفع بالبطاقة الإئتمانية
+                                            </label>
+                                            <img src="./assets/ht-images/africabank.png" alt="card" width="150"
+                                                height="30">
+                                            <img src="./assets/ht-images/mastercard.png" alt="card" width="70"
+                                                height="40">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="credit-data-form">
+
+                                    <form>
+
+                                        <div class="form-row mb-2 mx-4">
+                                            <div class="col-lg-6 col-12">
+                                                <label for="label">رقم البطاقة الإئتمانية</label>
+                                                <input type="text" class="form-control" placeholder="ادخل رقم البطاقة">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row mb-2 mx-4">
+                                            <div class="col-lg-6 col-12">
+                                                <label for="label" class="d-block">تاريخ الاتهاء</label>
+                                                <select id="month" name="month"
+                                                    class="mx-1 form-control d-inline-block mb-1">
+                                                    <option value="1">01</option>
+                                                    <option value="2">02</option>
+                                                    <option value="3">03</option>
+                                                    <option value="4">04</option>
+                                                    <option value="5">05</option>
+                                                    <option value="6">06</option>
+                                                    <option value="7">07</option>
+                                                    <option value="8">08</option>
+                                                    <option value="9">09</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                </select>
+                                                <select id="year" name="year"
+                                                    class="form-control d-inline-block mb-1 mx-1">
+                                                    <option value="2020">2020</option>
+                                                    <option value="2021">2021</option>
+                                                    <option value="2022">2022</option>
+                                                    <option value="2023">2023</option>
+                                                    <option value="2024">2024</option>
+                                                    <option value="2025">2025</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row mb-2 mx-4">
+                                            <div class="col-lg-6 col-12">
+                                                <label for="label" class="px-0">الرقم السري</label>
+                                                <input type="password" class="form-control w-100"
+                                                    placeholder="رقم البطاقة السري">
+                                            </div>
+                                        </div>
+
+                                    </form>
+
+                                </div>
+
+                                <div class="row px-5">
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="mx-2" type="radio" name="onDelivery" id="onDelivery"
+                                                value="onDelivery">
+                                            <label class="form-check-label" for="gridRadios1">
+                                                الدفع عند الاستلام
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row px-5">
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="mx-2" type="radio" name="meeza" id="meeza" value="meeza">
+                                            <label class="form-check-label" for="gridRadios1">
+                                                الدفع ببطاقة ميزة
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                        <!-- Row for footer data -->
+
+                        <div class="payment-data-container px-2 py-4 mx-4 text-right border-bottom">
+
+                            <form class="bg-white p-lg-4 p-3">
+
+                                <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                    <input type="checkbox" id="customControlInline">
+                                    <label class="label mx-1" for="customControlInline">لقد قمت بقراءة الشروط
+                                        و الأحكام</label>
+                                    <a href="#" class="mx-2">اعرض الشروط و الأحكام</a>
+                                </div>
+
+                                <a href="./payment.html" class="btn btn-success w-75 py-2">اطلب الآن</a>
+
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Column of cart checkout control container -->
+
+                <div class="col-lg-4 col-md-12 d-flex justify-content-lg-end justify-content-center px-0 my-lg-0 my-3">
+
+                    <div class="checkout-action-container bg-white">
+
+                        <!-- Header -->
+                        <p class="shopping-cart-details-header d-block text-right px-2 py-1 mb-0">
+                            <img src="./assets/ht-images/leaf.png" alt="label" width="30" height="30"> بيانات الطلب
+                        </p>
+
+                        <!-- price with details -->
+                        <div
+                            class="d-flex justify-content-between personal-cart-header px-xl-4 px-3 py-2 align-items-center bg-white font-weight-bold">
+                            <div class="personal-cart-label">
+                                سعر المنتجات
+                            </div>
+
+                            <div class="checkout-price">
+                                <p class="mb-0 d-inline-block text-danger">3000</p>
+                                <span class="text-success">EGP</span>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="d-flex justify-content-between personal-cart-header px-xl-4 px-3 py-2 align-items-center bg-white font-weight-bold">
+                            <div class="personal-cart-label">
+                                الشحن
+                            </div>
+
+                            <div class="checkout-price">
+                                <p class="mb-0 d-inline-block text-danger">50</p>
+                                <span class="text-success">EGP</span>
+                            </div>
+
+                        </div>
+
+                        <div class="d-flex justify-content-center px-1 py-2 align-items-center">
+                            <p class="personal-cart-label mb-0">
+                                <i class="fa fa-percent p-1"></i>
+                                لا يوجد رصيد نقاط
+                            </p>
+                            <a href="#" class="point-info-link mx-1">احصل على المزيد من المعلومات</a>
+                        </div>
+
+                        <div
+                            class="d-flex justify-content-between checkout-control-footer px-xl-4 px-3 py-2 align-items-center font-weight-bold">
+                            <div class="personal-cart-label">
+                                السعر الإجمالى
+                            </div>
+
+                            <div class="checkout-price">
+                                <p class="mb-0 d-inline-block">3050</p>
+                                <span class="text-white">EGP</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- End of cart section -->
+
+
+    <!-- Start of footer section -->
+
+    <footer id="footer">
+
+        <div class="container-fluid footer-container border-top">
+
+            <div class="row">
+
+                <div class="col-lg-5 col-md-6 col-12 border-left border-right px-5 py-3">
+                    <div class="footer-logo text-center">
+                        <img src="./assets/images/logo.jpg" width="185" height="90" alt="logo">
+                    </div>
+                    <div class="footer-text text-md-right text-center mt-4">
+                        أبو عوف هي علامة تجارية متخصصة في تقديم المأكولات الصحية بالجودة الأفضل والمعايير الأعلى حيث
+                        تمتلك الشركة قرابة 110 فرع
+                        في أنحاء مصر لبيع المنتجات بشكل مباشر في حين توزع الشركة منتجاتها لعدد كبير من الشركاء وتتوسع في
+                        تقديم الخدمة الأفضل
+                        وتوسيع نطاق وصول منتجاتها المميزة للباحثين عن الطعام الصحي عالي الجودة.
+                    </div>
+                    <div class="footer-form">
+                        <p class="footer-form-text text-right my-2">سجل في نشراتنا الشهرية لتصلك آخر أخبارنا و عروضنا
+                        </p>
+                        <form class="form-inline row d-md-flex flex-column justify-content-center">
+                            <div class="form-group mb-md-2 mb-1">
+                                <input type="text" class="form-control" id="footerEmail"
+                                    placeholder="من فضلك ادخل البريد الإلكترونى">
+                            </div>
+                            <button type="submit" class="footer-form-button mx-1">أرسل</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-6 col-12 border-right px-5 py-4">
+                    <div class="footer-products text-md-right text-center">
+                        <p class="footer-label mb-0">منتجات أبوعوف</p>
+                        <div class="footer-products-links my-1">
+                            <a class="footer-link p-x2" href="#">مكسرات</a>
+                            <a class="footer-link px-2" href="#">قهوة</a>
+                            <a class="footer-link px-2" href="#">أكل صحى</a>
+                            <a class="footer-link px-2" href="#">تمور و فواكه مجففة</a>
+                            <a class="footer-link px-2" href="#">حلويات أبو عوف</a>
+                            <a class="footer-link px-2" href="#">منتجات المطبخ</a>
+                            <a class="footer-link px-2" href="#">مشروبات</a>
+                        </div>
+                    </div>
+                    <div class="footer-company text-md-right text-center my-3">
+                        <p class="footer-label mb-0">الشركة</p>
+                        <div class="footer-products-links my-1">
+                            <a class="footer-link p-x2" href="#">قصة أبو عوف</a>
+                            <a class="footer-link px-2" href="#">الأسئلة الشائعة</a>
+                            <a class="footer-link px-2" href="#">فروعنا</a>
+                            <a class="footer-link px-2" href="#">الشروط و الأحكام</a>
+                            <a class="footer-link px-2" href="#">سياسة الإسترجاع</a>
+                        </div>
+                    </div>
+                    <div class="footer-payment-methods text-md-right text-center my-3">
+                        <p class="footer-label mb-0">الشركة</p>
+                        <div class="footer-products-images my-2">
+                            <img src="./assets/ht-images/cashondelivery.png" width="75" height="30">
+                            <img class="mx-2" src="./assets/ht-images/mastercard.png" width="46" height="36">
+                            <img class="mx-2" src="./assets/ht-images/visa.png" width="91" height="30">
+                            <img class="mx-2" src="./assets/ht-images/miza.png" width="37" height="26">
+                            <img class="mx-2" src="./assets/ht-images/africabank.png" width="168" height="30">
+                        </div>
+                    </div>
+                    <div class="footer-dial text-md-right text-center my-3">
+                        <p class="footer-label mb-1">اتصل بنا</p>
+                        <div class="dial text-md-right text-center">
+                            <i class="fa fa-phone px-2"></i>19969
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row d-flex justify-content-md-between justify-content-center border-top px-md-5 px-0">
+                <div class="col-md-6 col-12 made-by text-md-right text-center border-bottom">
+                    <a href="#">Online store powered by Almoasher business</a>
+                </div>
+                <div class="col-md-6 col-12 copyright text-md-left text-center">
+                    All copyrights belong to Healty & Tasty , 2021
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- End of footer section -->
+
+
+    <!-- jquery script file needed for bootstrap -->
+    <script src="js/jquery-3.5.1.js"></script>
+    <!--  Local script for home page  -->
+    <script src="js/common.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/checkout.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/cart.js"></script>
+    <!-- jquery script file needed for bootstrap -->
+    <script src="js/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap scripts -->
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
