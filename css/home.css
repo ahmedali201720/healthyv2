@@ -916,34 +916,6 @@ iframe {
 
 /* End of feedback section styles */
 
-/* Start of Scrollbar styles */
-
-body ::-webkit-scrollbar {
-  width: 7px;
-}
-
-/* Track */
-
-body ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-}
-
-/* Handle */
-
-body ::-webkit-scrollbar-thumb {
-  background: var(--greenTextColor);
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-
-body ::-webkit-scrollbar-thumb:hover {
-  background: var(--greenTextColor);
-}
-
-/* End of scrollbar styles */
-
 /* Footer styles */
 
 .footer-container {

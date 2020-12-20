@@ -40,3 +40,31 @@ body {
     position: relative;
     min-width: fit-content;
 }
+
+/* Start of Scrollbar styles */
+
+body ::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+
+body ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+
+body ::-webkit-scrollbar-thumb {
+    background: rgb(182, 140, 182);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+
+body ::-webkit-scrollbar-thumb:hover {
+    background: rgb(216, 172, 216);
+}
+
+/* End of scrollbar styles */
