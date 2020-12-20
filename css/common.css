@@ -1,9 +1,9 @@
 :root {
     --mainContainerColor: rgb(132, 132, 132);
     --mainGreen: #83BC92;
-    --mainOrange: #F2811E;
+    --mainPink: #5D3494;
     --hoverColor: #FBDBCE;
-    --branchBackColor: #FBF8F6;
+    --branchBackColor: #F5F5F5;
     --buttonHoverColor: #21a812;
     --indicatorColor: #c0bbb9;
     --sectionButton: #FE5723;
@@ -28,6 +28,7 @@
 
 html {
     width: 100%;
+    overflow-x: hidden;
 }
 
 /* General styles for body elements */

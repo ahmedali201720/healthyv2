@@ -1,0 +1,63 @@
+/* Start of top header styles */
+
+.top-header-container {
+    font-size: 0.55rem;
+    font-weight: 700;
+    background-color: var(--mainPink);
+}
+
+.top-header-link-container .top-header-link a {
+    color: white;
+}
+
+.top-header-link-container .top-header-link:hover, .top-header-link-container .top-header-link:hover a {
+    color: var(--mainPink);
+    background-color: white;
+    text-decoration: none;
+}
+
+/* End of top header styles */
+
+/* Start of mid header styles */
+
+.logo-and-sidebar-container .sidebar-button {
+    color: var(--mainPink);
+    border: 2px solid var(--mainPink);
+    border-radius: 5px;
+    outline: none;
+}
+
+.logo-and-sidebar-container .sidebar-button:hover {
+    color: white;
+    border: 2px solid var(--mainPink);
+    background-color: var(--mainPink);
+}
+
+.logo-and-sidebar-container img {
+    width: 5.5rem;
+}
+
+.mid-header-search-container {
+    font-size: 0.8rem;
+}
+
+.mid-header-search-container input {
+    border: 2px solid var(--mainPink);
+}
+
+.mid-header-search-container .search-button-container {
+    background-color: white;
+    color: var(--mainPink);
+    font-weight: 700;
+    border: 2px solid var(--mainPink);
+    border-radius: 5px;
+    outline: none;
+}
+
+.mid-header-search-container .search-button-container:hover {
+    background-color: var(--mainPink);
+    color: white;
+    outline: none;
+}
+
+/* End of mid header styles */
