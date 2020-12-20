@@ -80,7 +80,7 @@
 }
 
 .mid-header-user-container .shopping-cart-summary .fa-shopping-cart {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: var(--mainPink);
 }
 
@@ -96,6 +96,42 @@
     top: -20%;
     min-width: 30px;
     min-height: 30px;
+}
+
+.mid-header-user-container .profile-container:hover {
+    cursor: pointer;
+}
+
+.mid-header-user-container .profile-container-menu {
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid var(--mainPink);
+    background-color: white;
+    top: 150%;
+    left: 0px;
+    display: none;
+}
+
+.mid-header-user-container .profile-container-menu .profile-container-menu-option a {
+    color: var(--mainPink);
+}
+
+.mid-header-user-container .profile-container-menu .profile-container-menu-option:hover {
+    background-color: var(--mainPink);
+}
+
+.mid-header-user-container .profile-container-menu .profile-container-menu-option:hover a {
+    color: white;
+    text-decoration: none;
+}
+
+.mid-header-user-container .profile-container-menu button {
+    border: 2px solid var(--mainPink);
+    border-radius: 5px;
+    outline: none;
+    background-color: var(--mainPink);
+    color: white;
+    font-weight: 600;
 }
 
 /* End of mid header styles */
@@ -118,8 +154,23 @@
     font-size: 0.7rem;
 }
 
-.bottom-header-container .bottom-header-link-container .bottom-header-link:hover, .bottom-header-container .bottom-header-link-container .bottom-header-link:hover a {
-    background-color: white;
+.bottom-header-container .bottom-header-link-container .bottom-header-link {
+    color: var(--mainPink);
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.5s;
+    background-size: 600%;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, rgb(253, 253, 253) 50%) !important;
+}
+
+.bottom-header-container .bottom-header-link-container .bottom-header-link:hover {
+    color: var(--mainPink);
+    font-weight: 700;
+    background-position: 100%;
+    transform: translateX(0.3rem);
+}
+
+.bottom-header-container .bottom-header-link-container .bottom-header-link:hover a {
     color: var(--mainPink);
     text-decoration: none;
     font-weight: 700;
