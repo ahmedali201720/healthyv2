@@ -251,3 +251,33 @@
 }
 
 /* End of sidebar styles */
+
+/* Start of footer section styles */
+
+#footer {
+    background-color: var(--mainPink);
+    font-size: 0.85rem;
+}
+
+.footer-logo-container img {
+    width: 150px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.footer-form-button {
+    border: 2px solid white;
+    outline: none;
+    background-color: var(--mainPink);
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+}
+
+.footer-form-button:hover {
+    background-color: white;
+    color: var(--mainPink);
+    font-weight: 700;
+}
+
+/* End of footer section styles */
