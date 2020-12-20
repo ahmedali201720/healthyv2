@@ -10,9 +10,21 @@
     color: white;
 }
 
-.top-header-link-container .top-header-link:hover, .top-header-link-container .top-header-link:hover a {
+.top-header-link-container .top-header-link {
+    transition: all 0.5s;
+    background-size: 300%;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, rgb(253, 253, 253) 50%) !important;
+}
+
+.top-header-link-container .top-header-link:hover {
+    background-position: 100%;
+    transform: translateX(0.2rem);
     color: var(--mainPink);
-    background-color: white;
+    text-decoration: none;
+}
+
+.top-header-link-container .top-header-link:hover a {
+    color: var(--mainPink);
     text-decoration: none;
 }
 
@@ -60,4 +72,62 @@
     outline: none;
 }
 
+.mid-header-user-container {
+    height: 100%;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--mainPink);
+}
+
+.mid-header-user-container .shopping-cart-summary .fa-shopping-cart {
+    font-size: 1.4rem;
+    color: var(--mainPink);
+}
+
+.mid-header-user-container .shopping-cart-summary .fa-shopping-cart .cart-items-number {
+    position: absolute;
+    font-size: 0.5rem;
+    font-weight: 600;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: var(--mainPink);
+    left: 60%;
+    top: -20%;
+    min-width: 30px;
+    min-height: 30px;
+}
+
 /* End of mid header styles */
+
+/* Start of bottom header container styles */
+
+.fa-percent {
+    border: 1px solid var(--mainPink);
+    border-radius: 50%;
+    background-color: white;
+    color: var(--mainPink);
+}
+
+.bottom-header-container i {
+    padding: 4px;
+}
+
+.bottom-header-container {
+    background-color: var(--mainPink);
+    font-size: 0.7rem;
+}
+
+.bottom-header-container .bottom-header-link-container .bottom-header-link:hover, .bottom-header-container .bottom-header-link-container .bottom-header-link:hover a {
+    background-color: white;
+    color: var(--mainPink);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.bottom-header-container .bottom-header-link-container .bottom-header-link a {
+    color: white;
+    font-weight: 700;
+}
+
+/* End of bottom header container styles */
