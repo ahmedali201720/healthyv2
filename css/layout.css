@@ -34,15 +34,15 @@
 
 .logo-and-sidebar-container .sidebar-button {
     color: var(--mainPink);
-    border: 2px solid var(--mainPink);
+    border: none;
     border-radius: 5px;
     outline: none;
+    background-color: transparent;
+    font-size: 1.5rem;
 }
 
 .logo-and-sidebar-container .sidebar-button:hover {
-    color: white;
-    border: 2px solid var(--mainPink);
-    background-color: var(--mainPink);
+    color: rgb(36, 147, 221);
 }
 
 .logo-and-sidebar-container img {
@@ -74,7 +74,7 @@
 
 .mid-header-user-container {
     height: 100%;
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     font-weight: 700;
     color: var(--mainPink);
 }
@@ -112,6 +112,7 @@
     top: 100%;
     left: 0px;
     display: none;
+    z-index: 3000;
 }
 
 .mid-header-user-container .profile-container-menu .profile-container-menu-option a {
@@ -201,6 +202,7 @@
     background-color: var(--mainPink);
     overflow-y: auto;
     transition: all 0.6s;
+    z-index: 2000;
 }
 
 .sidebar-container {
@@ -247,7 +249,7 @@
 }
 
 .sidebar-container .sidebar-collapse-button:hover {
-    color: rgb(250, 235, 208);
+    color: rgb(63, 174, 248);
 }
 
 /* End of sidebar styles */
@@ -261,8 +263,8 @@
 
 .footer-logo-container img {
     width: 150px;
-    height: 120px;
-    border-radius: 50%;
+    height: 100px;
+    border-radius: 15px;
 }
 
 .footer-form-button {
@@ -271,13 +273,97 @@
     background-color: var(--mainPink);
     border-radius: 5px;
     color: white;
+    font-size: 0.7rem;
     font-weight: 600;
 }
 
 .footer-form-button:hover {
-    background-color: white;
+    background-color: rgb(247, 218, 218);
     color: var(--mainPink);
     font-weight: 700;
+}
+
+.healthy-app-container .healthy-app-image img {
+    width: 120px;
+    height: 95px;
+    border-radius: 10px;
+}
+
+.store-link {
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: white;
+    border: 2px solid white;
+    border-radius: 7px;
+}
+
+.store-link:hover {
+    background-color: white;
+    color: var(--mainPink);
+}
+
+.store-link:hover a {
+    text-decoration: none;
+    color: var(--mainPink);
+    font-weight: 600;
+}
+
+.store-link a {
+    color: white;
+}
+
+.help-center-container .help-center-icon i {
+    font-size: 4.2rem;
+    color: var(--mainPink);
+    background-color: white;
+}
+
+.footer-section-header {
+    color: wheat;
+    font-weight: 700;
+}
+
+.footer-section-links a {
+    color: white;
+}
+
+.footer-section-links a:hover {
+    color: wheat;
+    text-decoration: none;
+}
+
+.help-center-text-header a {
+    font-weight: 700;
+}
+
+.help-center-text p {
+    color: var(--mainPink);
+}
+
+.help-center-container {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.footer-external-link {
+    font-size: 1rem;
+    color: white;
+}
+
+.footer-external-link:hover {
+    color: wheat;
+}
+
+.footer-bottom-link {
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.footer-bottom-link:hover {
+    color: wheat;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 /* End of footer section styles */
