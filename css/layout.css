@@ -58,8 +58,8 @@
 }
 
 .mid-header-search-container .search-button-container {
-    background-color: white;
-    color: var(--mainPink);
+    background-color: var(--mainPink);
+    color: white;
     font-weight: 700;
     border: 2px solid var(--mainPink);
     border-radius: 5px;
@@ -67,8 +67,8 @@
 }
 
 .mid-header-search-container .search-button-container:hover {
-    background-color: var(--mainPink);
-    color: white;
+    background-color: rgb(252, 225, 252);
+    color: var(--mainPink);
     outline: none;
 }
 
@@ -86,7 +86,7 @@
 
 .mid-header-user-container .shopping-cart-summary .fa-shopping-cart .cart-items-number {
     position: absolute;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     font-weight: 600;
     color: white;
     border: 2px solid white;
@@ -163,12 +163,17 @@
 }
 
 .bottom-header-container .bottom-header-link-container .bottom-header-link {
+    position: relative;
     color: var(--mainPink);
     text-decoration: none;
     font-weight: 700;
     transition: all 0.5s;
     background-size: 600%;
     background-image: linear-gradient(120deg, transparent 0%, transparent 50%, rgb(253, 253, 253) 50%) !important;
+}
+
+.bottom-header-container .bottom-header-link-container .bottom-header-link *:hover {
+    cursor: pointer;
 }
 
 .bottom-header-container .bottom-header-link-container .bottom-header-link:hover {
@@ -200,6 +205,7 @@
     width: 0;
     height: 100vh;
     background-color: var(--mainPink);
+    border-left: 2px solid rgb(228, 206, 228);
     overflow-y: auto;
     transition: all 0.6s;
     z-index: 2000;
@@ -211,7 +217,9 @@
 }
 
 .sidebar-container .logo img {
-    border-radius: 50%;
+    width: 130px;
+    height: 90px;
+    border-radius: 10px;
 }
 
 .sidebar-container .sidebar-link {
@@ -222,13 +230,42 @@
     overflow-x: hidden;
 }
 
+.sidebar-link .fa-caret-down {
+    color: white;
+}
+
+.sidebar-link:hover .fa-caret-down {
+    color: var(--mainPink);
+    cursor: pointer;
+}
+
 .sidebar-container .sidebar-link a {
     color: white;
     font-weight: 600;
 }
 
+.sidebar-container .sidebar-sub-link-container {
+    display: none;
+}
+
+.sidebar-container .sidebar-sub-link-container .sidebar-sub-link {
+    visibility: hidden;
+}
+
+.sidebar-container .sidebar-sub-link a {
+    color: rgb(248, 223, 248);
+    font-weight: 600;
+}
+
 .sidebar-container .sidebar-link:hover {
     background-position: 100%;
+    cursor: pointer;
+}
+
+.sidebar-container .sidebar-sub-link:hover {
+    background-color: rgb(248, 223, 248);
+    background-position: 100%;
+    cursor: pointer;
 }
 
 .sidebar-container .sidebar-link:hover a {
@@ -237,10 +274,16 @@
     text-decoration: none;
 }
 
+.sidebar-container .sidebar-sub-link:hover a {
+    color: var(--mainPink);
+    font-weight: 700;
+    text-decoration: none;
+}
+
 .sidebar-container .sidebar-collapse-button {
     font-size: 1.5rem;
     position: absolute;
-    top: 3%;
+    top: 0%;
     left: 0;
     color: white;
     background-color: transparent;
@@ -367,3 +410,37 @@
 }
 
 /* End of footer section styles */
+
+/* Start of header sub menu styles */
+
+.main-sub-menu {
+    position: absolute;
+    display: none;
+    top: 100%;
+    right: -1%;
+    width: 290px;
+    background-color: white;
+    border-right: 2px solid var(--mainPink);
+    border-left: 2px solid var(--mainPink);
+    border-bottom: 2px solid var(--mainPink);
+    transition: height 5s ease-in-out;
+}
+
+.main-sub-menu-link {
+    display: block;
+    padding: 13px 13px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: right;
+    color: var(--mainPink) !important;
+    border-bottom: 1px solid rgb(209, 201, 201);
+}
+
+.main-sub-menu-link:hover {
+    text-decoration: none;
+    font-weight: 700;
+    background-color: var(--mainPink);
+    color: white !important;
+}
+
+/* End of header sub menu styles */
