@@ -39,6 +39,7 @@ body {
     padding: 0px;
     position: relative;
     min-width: fit-content;
+    overflow-x: hidden;
 }
 
 /* Start of Scrollbar styles */
