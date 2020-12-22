@@ -71,11 +71,6 @@
         font-size: 11px;
         height: 32px;
     }
-    .footer-form-button {
-        font-size: 11px;
-        width: 100%;
-        height: 32px;
-    }
     /* Styles of absolute cart */
     .absolute-cart {
         width: 9%;
@@ -362,11 +357,6 @@
         font-weight: 600;
         height: 32px;
     }
-    .footer-form-button {
-        font-size: 11px;
-        width: 100% !important;
-        height: 32px;
-    }
     .product-modal-button {
         width: 100% !important;
     }
@@ -474,11 +464,6 @@
     .footer-form form input {
         width: 100% !important;
         font-size: 11px;
-        height: 32px;
-    }
-    .footer-form-button {
-        font-size: 11px;
-        width: 100%;
         height: 32px;
     }
     /* Styles of absolute cart */
@@ -732,11 +717,6 @@
     .footer-form form input {
         width: 100% !important;
         font-size: 13px;
-        height: 32px;
-    }
-    .footer-form-button {
-        font-size: 13px;
-        width: 100%;
         height: 32px;
     }
     /* Start of cart details container */

@@ -1,3 +1,5 @@
+const headerShoppingCart = $(".shopping-cart-details-container");
+
 // Show and hide mid header menu option
 $(".mid-header-user-container .profile-container").mouseenter(
     function () {
@@ -66,5 +68,17 @@ $(".sidebar-link-toggler").click(function () {
                 nextElement.hide(300);
             }, 300);
         }
+    }
+});
+
+// Show and hide the shopping cart details container
+
+$(".header-shopping-cart-toggler").on({
+
+    mouseenter: function () {
+        headerShoppingCart.fadeIn();
+    },
+    mouseleave: function () {
+        headerShoppingCart.fadeOut();
     }
 });
