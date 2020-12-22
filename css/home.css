@@ -1,4 +1,4 @@
-@import url("./common.css");
+@import url("F/common.css");
 /* ****************************************************************** */
 
 /* Start of main header and small styles */
@@ -148,7 +148,7 @@
 }
 
 .add-to-cart-button .fa-hand-point-right {
-  color: var(--mainOrange);
+  color: var(--mainPink);
   font-size: 24px;
   top: 50%;
   -webkit-transform: translateY(-50%);

@@ -496,7 +496,7 @@
 .product-content-labels {
     font-size: 13px;
     font-weight: 700;
-    background-color: var(--buttonHoverColor);
+    background-color: var(--mainPink);
     color: white;
 }
 
@@ -563,13 +563,13 @@
 .normal-link-container a {
     font-size: 13px;
     font-weight: 700;
-    color: wheat !important;
+    color: white !important;
 }
 
 .normal-link i {
     font-size: 12px !important;
     font-weight: 700 !important;
-    color: wheat !important;
+    color: white !important;
 }
 
 .arrow-up-left {
@@ -581,6 +581,10 @@
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid black;
+}
+
+.shopping-cart-details-container .quick-links {
+    background-color: var(--mainPink);
 }
 
 /* End of cart details container styles */
