@@ -16,7 +16,17 @@ $(".mid-header-user-container .profile-container").mouseleave(
 // Sidebar styles script
 
 $(".logo-and-sidebar-container .sidebar-button").click(function () {
-    $("#sidebar").css("width", "18vw");
+    var windowWidth = $(window).width();
+    console.log(windowWidth);
+    if (windowWidth >= 992) {
+        $("#sidebar").css("width", "27vw");
+    }
+    else if (windowWidth >= 768 && windowWidth < 992) {
+        $("#sidebar").css("width", "50vw");
+    }
+    else if (windowWidth <= 600) {
+        $("#sidebar").css("width", "100vw");
+    }
     setTimeout(() => {
         $(".sidebar-container").fadeIn(100);
     }, 350);

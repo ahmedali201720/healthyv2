@@ -1,0 +1,83 @@
+@media only screen and (max-width: 600px) {
+    #footer {
+        background-color: var(--mainPink);
+        font-size: 0.75rem;
+    }
+    .mid-header-user-container {
+        font-size: 0.7rem;
+    }
+}
+
+/* ************************************************************************************* */
+
+@media only screen and (min-width: 600px) {
+    #footer {
+        background-color: var(--mainPink);
+        font-size: 0.65rem;
+    }
+    .mid-header-user-container {
+        font-size: 0.75rem;
+    }
+}
+
+/* ************************************************************************************* */
+
+@media only screen and (min-width: 768px) {
+    .mid-header-user-container {
+        font-size: 0.7rem;
+    }
+    #mid-header {
+        border-bottom: 2px solid var(--mainPink);
+    }
+    #footer {
+        background-color: var(--mainPink);
+        font-size: 0.8rem;
+    }
+    .mid-header-user-container {
+        font-size: 0.7rem;
+    }
+}
+
+/* ************************************************************************************* */
+
+@media only screen and (min-width: 992px) {
+    .mid-header-user-container {
+        font-size: 0.7rem;
+    }
+    #mid-header {
+        border-bottom: none;
+    }
+    #footer {
+        background-color: var(--mainPink);
+        font-size: 0.85rem;
+    }
+}
+
+/* ************************************************************************************* */
+
+@media only screen and (min-width: 992px) {
+    .bottom-header-container {
+        background-color: var(--mainPink);
+        font-size: 0.6rem;
+    }
+    .main-sub-menu {
+        width: 220px;
+    }
+}
+
+/* ************************************************************************************* */
+
+@media only screen and (min-width: 1200px) {
+    .mid-header-user-container {
+        font-size: 0.8rem;
+    }
+    .bottom-header-container {
+        background-color: var(--mainPink);
+        font-size: 0.7rem;
+    }
+    .main-sub-menu {
+        width: 250px;
+    }
+}
+
+/* ************************************************************************************* */

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/common.css">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./css/layout.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/layout.responsive.css">
     <!-- Style sheet for fontawesome assets -->
     <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
     <title>Home | New Layout</title>
@@ -19,21 +21,21 @@
 
     <!-- Start of large screen top header -->
 
-    <header id="top-header">
+    <header id="top-header" class="d-md-block d-none">
 
-        <div class="row top-header-container px-5">
+        <div class="row top-header-container px-lg-5 px-md-2">
 
             <div class="col-6 top-header-link-container d-flex justify-content-start">
 
-                <div class="top-header-link mx-2 px-1 py-2">
+                <div class="top-header-link mx-lg-2 mx-1 px-1 py-2">
                     <a href="#"><i class="fa fa-truck mx-1"></i> الشحن مجانى</a>
                 </div>
 
-                <div class="top-header-link mx-2 px-1 py-2">
+                <div class="top-header-link mx-lg-2 mx-1 px-1 py-2">
                     <a href="#"><i class="fa fa-sync-alt mx-1"></i> ارجاع السلع مجاناٌ</a>
                 </div>
 
-                <div class="top-header-link mx-2 px-1 py-2">
+                <div class="top-header-link d-lg-block d-none mx-lg-2 mx-1 px-1 py-2">
                     <a href="#"><i class="fa fa-dollar-sign mx-1"></i> الدفع عند الإستلام</a>
                 </div>
 
@@ -41,15 +43,15 @@
 
             <div class="col-6 top-header-link-container d-flex justify-content-end">
 
-                <div class="top-header-link mx-2 px-1 py-2">
+                <div class="top-header-link mx-lg-2 mx-1 px-1 py-2">
                     <a href="#">إنشاء حساب</a>
                 </div>
 
-                <div class="top-header-link mx-2 px-1 py-2">
+                <div class="top-header-link mx-lg-2 mx-1 px-1 py-2">
                     <a href="#">عروض و تخفيضات</a>
                 </div>
 
-                <div class="top-header-link mx-2 px-1 py-2">
+                <div class="top-header-link d-lg-block d-none mx-lg-2 mx-1 px-1 py-2">
                     <a href="#">مركز المساعدة</a>
                 </div>
 
@@ -70,7 +72,7 @@
 
     <header id="mid-header">
 
-        <div class="row mid-header-container px-5 py-3">
+        <div class="row mid-header-container px-xl-5 px-3 py-3">
 
             <div class="col-3">
 
@@ -80,7 +82,7 @@
                         <i class="fa fa-bars"></i>
                     </button>
 
-                    <a href="#">
+                    <a href="#" class="d-sm-inline-block d-none">
                         <img src="./assets/images/logo.jpg" alt="logo">
                     </a>
 
@@ -88,7 +90,7 @@
 
             </div>
 
-            <div class="col-6 mid-header-search-container">
+            <div class="col-lg-6 col-md-5 col-3 mid-header-search-container d-md-block d-none">
 
                 <div class="mid-header-search-input d-flex justify-content-center align-items-center">
 
@@ -102,7 +104,7 @@
 
             </div>
 
-            <div class="col-3">
+            <div class="col-lg-3 col-md-4 col-9">
 
                 <div class="mid-header-user-container d-flex justify-content-end align-items-center">
 
@@ -166,13 +168,13 @@
 
     <!-- Start of large screen botto header -->
 
-    <header id="bottom-header">
+    <header id="bottom-header" class="d-lg-block d-none">
 
-        <div class="row bottom-header-container px-5">
+        <div class="row bottom-header-container px-xl-5 px-lg-2">
 
             <div class="bottom-header-link-container d-flex justify-content-start">
 
-                <div class="bottom-header-link mx-2 px-1 py-2">
+                <div class="bottom-header-link mx-xl-2 mx-lg-1 px-1 py-2">
                     <a href="#"><i class="fa fa-percent mx-1"></i> عروض و تخفيضات</a>
                 </div>
 
@@ -194,7 +196,7 @@
                     <!-- End of main sub menu -->
                 </div>
 
-                <div class="bottom-header-link sub-menu-toggler mx-2 px-1 py-2">
+                <div class="bottom-header-link sub-menu-toggler mx-xl-2 mx-lg-1 px-1 py-2">
                     <a href="#"></i>الماركات</a>
                     <i class="fa fa-caret-down text-white"></i>
                     <!-- Start of main sub menu -->
@@ -212,7 +214,7 @@
                     <!-- End of main sub menu -->
                 </div>
 
-                <div class="bottom-header-link sub-menu-toggler mx-2 px-1 py-2">
+                <div class="bottom-header-link sub-menu-toggler mx-xl-2 mx-lg-1 px-1 py-2">
                     <a href="#">منتجات المطبخ</a>
                     <i class="fa fa-caret-down text-white"></i>
                     <!-- Start of main sub menu -->
@@ -230,7 +232,7 @@
                     <!-- End of main sub menu -->
                 </div>
 
-                <div class="bottom-header-link sub-menu-toggler mx-2 px-1 py-2">
+                <div class="bottom-header-link sub-menu-toggler mx-xl-2 mx-lg-1 px-1 py-2">
                     <a href="#"><i class="fa fa-cookie mx-1"></i>المخبوزات</a>
                     <i class="fa fa-caret-down text-white"></i>
                     <!-- Start of main sub menu -->
@@ -248,7 +250,7 @@
                     <!-- End of main sub menu -->
                 </div>
 
-                <div class="bottom-header-link sub-menu-toggler mx-2 px-1 py-2">
+                <div class="bottom-header-link sub-menu-toggler mx-xl-2 mx-lg-1 px-1 py-2">
                     <a href="#"><i class="fa fa-pizza-slice mx-1"></i>المعجنات</a>
                     <i class="fa fa-caret-down text-white"></i>
                     <!-- Start of main sub menu -->
@@ -266,7 +268,7 @@
                     <!-- End of main sub menu -->
                 </div>
 
-                <div class="bottom-header-link sub-menu-toggler mx-2 px-1 py-2">
+                <div class="bottom-header-link sub-menu-toggler mx-xl-2 mx-lg-1 px-1 py-2">
                     <a href="#"><i class="fa fa-dot-circle mx-1"></i>المزيد</a>
                     <i class="fa fa-caret-down text-white"></i>
                     <!-- Start of main sub menu -->
@@ -304,6 +306,11 @@
             </div>
 
             <div
+                class="sidebar-link sidebar-link-toggler d-flex d-lg-none justify-content-between align-items-center border-top px-4 py-3">
+                <a href="#"><i class="fa fa-hamburger mx-2"></i>عروض و تخفيضات</a>
+            </div>
+
+            <div
                 class="sidebar-link sidebar-link-toggler d-flex justify-content-between align-items-center border-top px-4 py-3">
                 <a href="#"><i class="fa fa-hamburger mx-2"></i>الأنظمة الغذائية</a>
                 <i class="fa fa-caret-down"></i>
@@ -315,6 +322,21 @@
                 </div>
                 <div class="sidebar-sub-link text-right px-5 py-2">
                     <a href="#">النظام الثانى</a>
+                </div>
+            </div>
+
+            <div
+                class="sidebar-link sidebar-link-toggler d-flex d-lg-none justify-content-between align-items-center border-top px-4 py-3">
+                <a href="#"><i class="fa fa-hamburger mx-2"></i>الماركات</a>
+                <i class="fa fa-caret-down"></i>
+            </div>
+
+            <div class="sidebar-sub-link-container">
+                <div class="sidebar-sub-link text-right px-5 py-2">
+                    <a href="#">الماركة الأولى</a>
+                </div>
+                <div class="sidebar-sub-link text-right px-5 py-2">
+                    <a href="#">الماركة الثانية</a>
                 </div>
             </div>
 
@@ -405,29 +427,32 @@
 
             <div class="row px-5 py-5">
 
-                <div class="col-3 footer-logo-container d-flex justify-content-start align-items-center">
+                <div
+                    class="col-lg-2 col-12 footer-logo-container md-lg-0  mb-2 d-flex justify-content-lg-start justify-content-center align-items-start">
 
                     <img src="./assets/images/logo.jpg" alt="logo">
 
                 </div>
 
-                <div class="col-5 footer-contact-form-container text-right">
+                <div class="col-lg-6 col-12 footer-contact-form-container text-lg-right text-center">
 
                     <p class="text-wheat mb-0">هل أنت جديد على هيلثى & تيستى ؟</p>
                     <small class="text-white">اشترك فى نشرتنا الإخبارية للحصول على أحدث العروض .</small>
 
-                    <form class="footer-form mt-2">
+                    <form class="footer-form mt-2 mb-3">
 
                         <div class="form-row">
-                            <input type="text" class="form-control col-7" placeholder="ادخل البريد الإلكترونى">
-                            <button class="footer-form-button col-4 mx-1 px-2 py-2">ارسل العروض الى بريدى</button>
+                            <input type="text" class="form-control col-xl-7 col-lg-6 mb-1"
+                                placeholder="ادخل البريد الإلكترونى">
+                            <button class="footer-form-button col-xl-4 col-lg-5 mx-1 px-2 py-2">ارسل العروض الى
+                                بريدى</button>
                         </div>
 
                     </form>
 
                 </div>
 
-                <div class="col-4 healthy-app-container d-flex justify-content-center align-items-start">
+                <div class="col-lg-4 col-12 healthy-app-container d-flex justify-content-center align-items-start">
 
                     <div class="healthy-app-image mx-3">
                         <img src="./assets/images/logo.jpg" alt="logo">
@@ -438,12 +463,12 @@
                             <p class="mb-0">تنزيل تطبيق هيلثى & تيستى مجاناُ</p>
                             <small class="text-wheat">احصل على العديد من العروض الحصرية</small>
                         </div>
-                        <div class="store-links d-flex justify-content-center align-items-center my-2">
-                            <div class="col-6 store-link mx-1 px-2 py-1 text-center">
+                        <div class="row store-links d-flex justify-content-center align-items-center my-2">
+                            <div class="col-xl-6 col-lg-12 store-link mx-1 mb-1 px-2 py-1 text-center">
                                 <a href="#">Google Play</a>
                                 <i class="fab fa-google-play mx-1"></i>
                             </div>
-                            <div class="col-6 store-link mx-1 px-2 py-1 text-center">
+                            <div class="col-xl-6 col-lg-12 store-link mx-1 mb-1 px-2 py-1 text-center">
                                 <a href="#">App Store</a>
                                 <i class="fab fa-apple mx-1"></i>
                             </div>
@@ -456,26 +481,26 @@
 
             <div class="row px-5 py-3">
 
-                <div class="col-2">
+                <div class="col-lg-2 col-md-6 col-12 mb-lg-0 mb-3">
 
-                    <div class="footer-section-header text-right">
+                    <div class="footer-section-header text-lg-right text-center">
                         <p>الأنظمة الغذائية</p>
                     </div>
 
-                    <div class="footer-section-links text-right">
+                    <div class="footer-section-links text-lg-right text-center">
                         <a href="#" class="d-block">الكيتو</a>
                         <a href="#">اللو كالوري</a>
                     </div>
 
                 </div>
 
-                <div class="col-2">
+                <div class="col-lg-2 col-md-6 col-12 mb-lg-0 mb-3">
 
-                    <div class="footer-section-header text-right">
+                    <div class="footer-section-header text-lg-right text-center">
                         <p>حسابى</p>
                     </div>
 
-                    <div class="footer-section-links text-right">
+                    <div class="footer-section-links text-lg-right text-center">
                         <a href="#" class="d-block">إنشاء حساب</a>
                         <a href="#" class="d-block">تسجيل دخول</a>
                         <a href="#" class="d-block">اعدادات الحساب</a>
@@ -485,13 +510,13 @@
 
                 </div>
 
-                <div class="col-2">
+                <div class="col-lg-2 col-md-6 col-12 mb-lg-0 mb-3">
 
-                    <div class="footer-section-header text-right">
+                    <div class="footer-section-header text-lg-right text-center">
                         <p>خدمة العملاء</p>
                     </div>
 
-                    <div class="footer-section-links text-right">
+                    <div class="footer-section-links text-lg-right text-center">
                         <a href="#" class="d-block">مركز المساعدة</a>
                         <a href="#" class="d-block">اتصل بنا</a>
                         <a href="#" class="d-block">سياسة الشحن</a>
@@ -500,20 +525,20 @@
 
                 </div>
 
-                <div class="col-2">
+                <div class="col-lg-2 col-md-6 col-12 mb-lg-0 mb-3">
 
-                    <div class="footer-section-header text-right">
+                    <div class="footer-section-header text-lg-right text-center">
                         <p>عن هيلثى & تيستى</p>
                     </div>
 
-                    <div class="footer-section-links text-right">
+                    <div class="footer-section-links text-lg-right text-center">
                         <a href="#" class="d-block">من نحن</a>
                         <a href="#" class="d-block">فروعنا</a>
                     </div>
 
                 </div>
 
-                <div class="col-4">
+                <div class="col-lg-4 col-12 mb-lg-0 mb-3">
 
                     <div class="row help-center-container py-4">
 
@@ -521,9 +546,9 @@
                             <i class="fa fa-info-circle"></i>
                         </div>
 
-                        <div class="col-7 help-center-text text-right">
+                        <div class="col-7 help-center-text text-lg-right text-center">
 
-                            <div class="help-center-text-header mb-2 text-right">
+                            <div class="help-center-text-header mb-2 text-lg-right text-center">
                                 <a href="#">مركز المساعدة</a>
                             </div>
                             <p class="mb-0">لديك استفسار أو مشكلة ؟</p>
@@ -539,14 +564,14 @@
 
             <div class="row mx-5 py-2 border-top">
 
-                <div class="col-3 d-flex justify-content-start px-0">
+                <div class="col-lg-3 col-12 d-flex justify-content-lg-start justify-content-center mb-lg-0 mb-2 px-0">
                     <a href="#" class="footer-bottom-link mx-2">شروط الإستخدام</a>
                     <a href="#" class="footer-bottom-link mx-2">سياسة الحصوصية</a>
                 </div>
 
-                <div class="col-6 d-flex justify-content-center">
+                <div class="col-lg-6 col-12 d-flex justify-content-center mb-lg-0 mb-2">
 
-                    <span class="mx-1 text-wheat">تابعونا على :</span>
+                    <span class="d-lg-inline-block d-none mx-1 text-wheat">تابعونا على :</span>
 
                     <a href="#" class="footer-external-link mx-2">
                         <i class="fab fa-facebook-f"></i>
@@ -566,7 +591,7 @@
 
                 </div>
 
-                <div class="col-3 d-flex justify-content-end px-0">
+                <div class="col-lg-3 col-12 d-flex justify-content-lg-end justify-content-center mb-lg-0 mb-2 px-0">
 
                     <a href="#" class="footer-bottom-link mx-2">
                         <img class="mx-1" src="./assets/icons/england.png" alt="england" width="20" height="20">

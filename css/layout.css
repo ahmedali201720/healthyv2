@@ -32,6 +32,10 @@
 
 /* Start of mid header styles */
 
+#mid-header {
+    border-bottom: 2px solid var(--mainPink);
+}
+
 .logo-and-sidebar-container .sidebar-button {
     color: var(--mainPink);
     border: none;
@@ -205,7 +209,6 @@
     width: 0;
     height: 100vh;
     background-color: var(--mainPink);
-    border-left: 2px solid rgb(228, 206, 228);
     overflow-y: auto;
     transition: all 0.6s;
     z-index: 2000;
@@ -305,8 +308,8 @@
 }
 
 .footer-logo-container img {
-    width: 150px;
-    height: 100px;
+    width: 100px;
+    height: 75px;
     border-radius: 15px;
 }
 
@@ -327,8 +330,8 @@
 }
 
 .healthy-app-container .healthy-app-image img {
-    width: 120px;
-    height: 95px;
+    width: 70px;
+    height: 60px;
     border-radius: 10px;
 }
 
@@ -418,7 +421,8 @@
     display: none;
     top: 100%;
     right: -1%;
-    width: 290px;
+    width: 250px;
+    overflow-x: auto;
     background-color: white;
     border-right: 2px solid var(--mainPink);
     border-left: 2px solid var(--mainPink);
