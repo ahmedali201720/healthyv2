@@ -315,9 +315,20 @@
 /* Start of footer section styles */
 
 #footer {
-    background-color: var(--mainPink);
     font-size: 0.85rem;
     min-width: 100%;
+}
+
+.top-footer-section {
+    background-color: var(--mainPink);
+}
+
+.mid-footer-section {
+    background-color: #9f61f1;
+}
+
+.bottom-footer-section {
+    background-color: #9f61f1;
 }
 
 .footer-logo-container img {
