@@ -76,9 +76,9 @@ $(".sidebar-link-toggler").click(function () {
 $(".header-shopping-cart-toggler").on({
 
     mouseenter: function () {
-        headerShoppingCart.fadeIn();
+        headerShoppingCart.show();
     },
     mouseleave: function () {
-        headerShoppingCart.fadeOut();
+        headerShoppingCart.hide();
     }
 });
