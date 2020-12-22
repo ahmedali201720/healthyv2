@@ -6,6 +6,16 @@
     .mid-header-user-container {
         font-size: 0.7rem;
     }
+    /* Start of cart details container */
+    .shopping-cart-details-container {
+        top: 115%;
+        left: 0%;
+        width: 80vw;
+    }
+    /* End of cart details container styles */
+    .product-content {
+        flex-direction: column;
+    }
 }
 
 /* ************************************************************************************* */
@@ -18,6 +28,28 @@
     .mid-header-user-container {
         font-size: 0.75rem;
     }
+    /* Start of cart details container */
+    .shopping-cart-details-container {
+        top: 115%;
+        left: 0%;
+        width: 90vw;
+    }
+    /* End of cart details container styles */
+    .product-content {
+        flex-direction: column;
+    }
+}
+
+/* ************************************************************************************* */
+
+@media only screen and (min-width:667px) {
+    /* Start of cart details container */
+    .shopping-cart-details-container {
+        top: 115%;
+        left: 0%;
+        width: 80vw;
+    }
+    /* End of cart details container styles */
 }
 
 /* ************************************************************************************* */
@@ -36,6 +68,16 @@
     .mid-header-user-container {
         font-size: 0.7rem;
     }
+    /* Start of cart details container */
+    .shopping-cart-details-container {
+        top: 100%;
+        left: 30%;
+        width: 70vw;
+    }
+    /* End of cart details container styles */
+    .product-content {
+        flex-direction: row;
+    }
 }
 
 /* ************************************************************************************* */
@@ -51,11 +93,6 @@
         background-color: var(--mainPink);
         font-size: 0.85rem;
     }
-}
-
-/* ************************************************************************************* */
-
-@media only screen and (min-width: 992px) {
     .bottom-header-container {
         background-color: var(--mainPink);
         font-size: 0.6rem;
@@ -63,6 +100,13 @@
     .main-sub-menu {
         width: 220px;
     }
+    /* Start of cart details container */
+    .shopping-cart-details-container {
+        top: 100%;
+        left: 25%;
+        width: 60vw;
+    }
+    /* End of cart details container styles */
 }
 
 /* ************************************************************************************* */
@@ -78,6 +122,13 @@
     .main-sub-menu {
         width: 250px;
     }
+    /* Start of cart details container */
+    .shopping-cart-details-container {
+        top: 100%;
+        left: 25%;
+        width: 50vw;
+    }
+    /* End of cart details container styles */
 }
 
 /* ************************************************************************************* */

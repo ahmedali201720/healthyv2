@@ -11,48 +11,6 @@
   animation: mainFloatLeft 2s;
 }
 
-@keyframes mainFloatLeft {
-  0% {
-    -webkit-transform: translateX(-100px);
-    -ms-transform: translateX(-100px);
-    transform: translateX(-100px);
-    opacity: 0;
-  }
-  50% {
-    -webkit-transform: translateX(20px);
-    -ms-transform: translateX(20px);
-    transform: translateX(20px);
-    opacity: 0.5;
-  }
-  100% {
-    -webkit-transform: translateX(0px);
-    -ms-transform: translateX(0px);
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes mainFloatRight {
-  0% {
-    -webkit-transform: translateX(100px);
-    -ms-transform: translateX(100px);
-    transform: translateX(100px);
-    opacity: 0;
-  }
-  50% {
-    -webkit-transform: translateX(-20px);
-    -ms-transform: translateX(-20px);
-    transform: translateX(-20px);
-    opacity: 0.5;
-  }
-  100% {
-    -webkit-transform: translateX(0px);
-    -ms-transform: translateX(0px);
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
-
 /* End of main header styles */
 
 /* main container : the top section of header */
@@ -147,28 +105,6 @@
   position: relative;
 }
 
-.add-to-cart-button .fa-hand-point-right {
-  color: var(--mainPink);
-  font-size: 24px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  animation: animateHand 1s infinite;
-}
-
-@keyframes animateHand {
-  0% {
-    left: 25%;
-  }
-  50% {
-    left: 27%
-  }
-  100% {
-    left: 25%;
-  }
-}
-
 .shopping-cart-container .cart-items {
   font-size: 12px;
   color: white;
@@ -208,24 +144,6 @@
 
 .shopping-cart-container:hover, .small-shopping-cart-container:hover {
   cursor: pointer;
-}
-
-@keyframes FadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes FadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
 }
 
 .inline-cart-items {
@@ -628,17 +546,6 @@
 
 .single-product-control-wrapper {
   position: static;
-}
-
-@keyframes animate-section-controls {
-  from {
-    width: 0px;
-    opacity: 0;
-  }
-  to {
-    width: 100%;
-    opacity: 1;
-  }
 }
 
 .card-increment-btn, .card-decrement-btn {
@@ -1407,24 +1314,6 @@ iframe {
   border: 1px solid var(--mainOrange);
   border-radius: 5px;
   animation: AnimateDropDown 0.5s;
-}
-
-@keyframes AnimateDropDown {
-  from {
-    top: -5%;
-    -webkit-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    transform: scale(0.5);
-    -webkit-transform: skew(20deg);
-    -ms-transform: skew(20deg);
-    transform: skew(20deg);
-    -webkit-transform: rotate(20deg);
-    -ms-transform: rotate(20deg);
-    transform: rotate(20deg);
-  }
-  to {
-    top: 100%;
-  }
 }
 
 .filter-dropdown-options .dropdown-option:hover {

@@ -1,0 +1,100 @@
+@keyframes animateHand {
+    0% {
+        left: 25%;
+    }
+    50% {
+        left: 27%
+    }
+    100% {
+        left: 25%;
+    }
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes FadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes animate-section-controls {
+    from {
+        width: 0px;
+        opacity: 0;
+    }
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes AnimateDropDown {
+    from {
+        top: -5%;
+        -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        transform: scale(0.5);
+        -webkit-transform: skew(20deg);
+        -ms-transform: skew(20deg);
+        transform: skew(20deg);
+        -webkit-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+        transform: rotate(20deg);
+    }
+    to {
+        top: 100%;
+    }
+}
+
+@keyframes mainFloatLeft {
+    0% {
+        -webkit-transform: translateX(-100px);
+        -ms-transform: translateX(-100px);
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+        transform: translateX(20px);
+        opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes mainFloatRight {
+    0% {
+        -webkit-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+        transform: translateX(-20px);
+        opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
