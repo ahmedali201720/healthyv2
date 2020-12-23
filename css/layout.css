@@ -476,13 +476,15 @@
 
 /* Start of cart details container */
 
-.shopping-cart-details-container, .small-shopping-cart-details-container {
-    top: 98%;
-    left: 15%;
-    width: 25vw;
+.shopping-cart-details-container {
+    top: 100%;
+    left: 20%;
+    width: 30vw;
     overflow: auto;
     background-color: white;
-    border: 1px solid black;
+    border-right: 2px solid var(--mainPink);
+    border-left: 2px solid var(--mainPink);
+    border-bottom: 2px solid var(--mainPink);
     border-radius: 5px;
     display: none;
     z-index: 800;
@@ -499,7 +501,7 @@
 
 .shopping-cart-contents {
     height: fit-content;
-    max-height: 25vh;
+    max-height: 15vh;
     overflow: auto;
     animation-name: FadeIn;
     animation-duration: 1s;
@@ -549,17 +551,33 @@
 }
 
 .product-content-text {
-    font-size: 12px;
+    color: black;
+    font-size: 11px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 12px;
     max-width: 100%;
-    max-height: 100%;
-    overflow: auto;
+}
+
+.product-content-numeric-info {
+    font-size: 10px;
+    font-weight: 600;
+    color: black;
+}
+
+.header-cart-total-price {
+    font-size: 13px;
+    font-weight: 700;
 }
 
 .product-content-quantity {
     font-size: 12px;
     font-weight: 700;
+}
+
+.shopping-cart-details-footer .total-price {
+    font-size: 13px;
+    font-weight: 700;
+    color: black;
 }
 
 .shopping-cart-details-footer .footer-label, .shopping-cart-details-footer .footer-price, .shopping-cart-details-footer .footer-product-num {
@@ -570,6 +588,10 @@
 .shopping-cart-details-footer .footer-price, .shopping-cart-details-footer .footer-product-num {
     color: var(--greenTextColor);
     font-weight: 700;
+}
+
+.normal-link-container {
+    border-radius: 5px;
 }
 
 .normal-link-container a {
@@ -586,17 +608,13 @@
 
 .arrow-up-left {
     position: absolute;
-    top: -2%;
-    left: 7%;
+    top: -3%;
+    left: 0%;
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid black;
-}
-
-.shopping-cart-details-container .quick-links {
-    background-color: var(--mainPink);
 }
 
 .add-to-cart-button .fa-hand-point-right {

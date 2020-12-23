@@ -8,14 +8,11 @@
     }
     /* Start of cart details container */
     .shopping-cart-details-container {
-        top: 115%;
+        top: 100%;
         left: 0%;
         width: 80vw;
     }
     /* End of cart details container styles */
-    .product-content {
-        flex-direction: column;
-    }
 }
 
 /* ************************************************************************************* */
@@ -30,14 +27,11 @@
     }
     /* Start of cart details container */
     .shopping-cart-details-container {
-        top: 115%;
+        top: 100%;
         left: 0%;
         width: 90vw;
     }
     /* End of cart details container styles */
-    .product-content {
-        flex-direction: column;
-    }
 }
 
 /* ************************************************************************************* */
@@ -45,7 +39,7 @@
 @media only screen and (min-width:667px) {
     /* Start of cart details container */
     .shopping-cart-details-container {
-        top: 115%;
+        top: 100%;
         left: 0%;
         width: 80vw;
     }
@@ -72,63 +66,54 @@
     .shopping-cart-details-container {
         top: 100%;
         left: 30%;
-        width: 70vw;
+        width: 50vw;
     }
     /* End of cart details container styles */
-    .product-content {
-        flex-direction: row;
+    /* ************************************************************************************* */
+    @media only screen and (min-width: 992px) {
+        .mid-header-user-container {
+            font-size: 0.7rem;
+        }
+        #mid-header {
+            border-bottom: none;
+        }
+        #footer {
+            background-color: var(--mainPink);
+            font-size: 0.85rem;
+        }
+        .bottom-header-container {
+            background-color: var(--mainPink);
+            font-size: 0.6rem;
+        }
+        .main-sub-menu {
+            width: 220px;
+        }
+        /* Start of cart details container */
+        .shopping-cart-details-container {
+            top: 100%;
+            left: 25%;
+            width: 35vw;
+        }
+        /* End of cart details container styles */
     }
-}
-
-/* ************************************************************************************* */
-
-@media only screen and (min-width: 992px) {
-    .mid-header-user-container {
-        font-size: 0.7rem;
+    /* ************************************************************************************* */
+    @media only screen and (min-width: 1200px) {
+        .mid-header-user-container {
+            font-size: 0.8rem;
+        }
+        .bottom-header-container {
+            background-color: var(--mainPink);
+            font-size: 0.7rem;
+        }
+        .main-sub-menu {
+            width: 250px;
+        }
+        /* Start of cart details container */
+        .shopping-cart-details-container {
+            top: 100%;
+            left: 25%;
+            width: 35vw;
+        }
+        /* End of cart details container styles */
     }
-    #mid-header {
-        border-bottom: none;
-    }
-    #footer {
-        background-color: var(--mainPink);
-        font-size: 0.85rem;
-    }
-    .bottom-header-container {
-        background-color: var(--mainPink);
-        font-size: 0.6rem;
-    }
-    .main-sub-menu {
-        width: 220px;
-    }
-    /* Start of cart details container */
-    .shopping-cart-details-container {
-        top: 100%;
-        left: 25%;
-        width: 60vw;
-    }
-    /* End of cart details container styles */
-}
-
-/* ************************************************************************************* */
-
-@media only screen and (min-width: 1200px) {
-    .mid-header-user-container {
-        font-size: 0.8rem;
-    }
-    .bottom-header-container {
-        background-color: var(--mainPink);
-        font-size: 0.7rem;
-    }
-    .main-sub-menu {
-        width: 250px;
-    }
-    /* Start of cart details container */
-    .shopping-cart-details-container {
-        top: 100%;
-        left: 25%;
-        width: 38vw;
-    }
-    /* End of cart details container styles */
-}
-
-/* ************************************************************************************* */
+    /* ************************************************************************************* */
