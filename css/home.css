@@ -1313,8 +1313,8 @@ iframe {
 
 .single-product-img-container img {
   width: 100%;
-  height: auto;
-  border: 2px solid var(--mainPink);
+  height: 320px;
+  border: 1px solid var(--mainPink);
   border-radius: 10px;
 }
 
@@ -1410,6 +1410,29 @@ iframe {
 .static-product-rating .fa-star-clicked {
   color: var(--mainOrange);
   display: none;
+}
+
+.nutrition-details {
+  width: 99%;
+  height: 100%;
+  background-color: var(--mainPink);
+  border-radius: 5px;
+  color: white;
+}
+
+.nutrition-details-title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.nutrition-details-description {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.small-labels {
+  font-size: 12px;
+  font-weight: 700;
 }
 
 /* *********************************************** */

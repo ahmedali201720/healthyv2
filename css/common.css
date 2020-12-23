@@ -74,6 +74,10 @@ body ::-webkit-scrollbar-thumb:hover {
     color: wheat;
 }
 
+.text-main {
+    color: var(--mainPink);
+}
+
 .bg-main {
     background-color: var(--mainPink);
 }

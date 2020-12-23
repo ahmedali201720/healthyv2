@@ -180,6 +180,10 @@
         width: 100% !important;
     }
     /* End of FAQ */
+    .small-labels {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -322,6 +326,10 @@
         width: 95% !important;
     }
     /* End of FAQ */
+    .small-labels {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media only screen and (min-width: 667px) {
@@ -508,6 +516,10 @@
         width: 80% !important;
     }
     /* End of FAQ */
+    .small-labels {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 @media only screen and (min-width: 850px) {
