@@ -73,3 +73,7 @@ body ::-webkit-scrollbar-thumb:hover {
 .text-wheat {
     color: wheat;
 }
+
+.bg-main {
+    background-color: var(--mainPink);
+}

@@ -296,11 +296,11 @@
   border-radius: 50% !important;
   width: 11px !important;
   height: 11px !important;
-  background-color: var(--indicatorColor) !important;
+  background-color: var(--mainPink) !important;
 }
 
 .carousel-indicators .active {
-  background-color: var(--mainOrange) !important;
+  background-color: var(--mainPink) !important;
 }
 
 /* End of banner styles */
@@ -350,63 +350,33 @@
 }
 
 .section-labels .main-label {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 34px;
 }
 
 .section-labels .sub-label, .sub-label {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 400;
 }
 
 .section-button {
-  border: 2px solid var(--sectionButton);
-  border-radius: 5px;
   height: 60%;
   padding: 0px 15px;
   position: relative;
-}
-
-.section-button::after {
-  content: "";
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all 0.7s;
-}
-
-.section-button:hover::after {
-  background-color: var(--sectionButton);
-  -webkit-transform: scaleX(1.5) scaleY(1.6);
-  -ms-transform: scaleX(1.5) scaleY(1.6);
-  transform: scaleX(1.5) scaleY(1.6);
-  opacity: 0;
-  cursor: pointer;
-}
-
-.section-button:hover {
-  background-color: var(--sectionButton);
-}
-
-.section-button:hover {
   color: white !important;
-}
-
-.section-button {
-  color: var(--sectionButton) !important;
   font-size: 14px;
   font-weight: 600;
   line-height: 35px;
 }
 
 .section-button:hover {
-  color: white !important;
   text-decoration: none;
+}
+
+.section-button:hover div {
+  color: wheat;
+  transform: scaleX(1.03) scaleY(1.05);
 }
 
 .offer-card {
@@ -414,7 +384,7 @@
   height: 345px !important;
   max-height: 345px;
   border: 1px solid var(--cardBorderColor) !important;
-  border-radius: 3px !important;
+  border-radius: 5px !important;
   padding: 15px 12px;
   position: relative;
   background-color: white;
@@ -1344,7 +1314,7 @@ iframe {
 .single-product-img-container img {
   width: 100%;
   height: auto;
-  border: 2px solid var(--mainOrange);
+  border: 2px solid var(--mainPink);
   border-radius: 10px;
 }
 
@@ -1953,3 +1923,45 @@ iframe {
 }
 
 /* End of tooltip styles */
+
+/* Section rows styles */
+
+.section-header-row, .section-content-row {
+  border-radius: 5px;
+}
+
+/* End of section rows styles */
+
+/* brand section styles */
+
+.brand-row img {
+  width: 100%;
+  height: auto;
+}
+
+.brand-row img:hover {
+  transform: scaleX(1.03) scaleY(1.05);
+}
+
+.carousel-control-prev-icon {
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-next-icon {
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 40px !important;
+  width: 25px !important;
+  outline: black;
+  background-size: 100%, 100%;
+  border: 2px solid var(--mainPink);
+  background-color: var(--mainPink) !important;
+}
+
+/* End of brand section styles */
