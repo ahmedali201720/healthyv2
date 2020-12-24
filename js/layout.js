@@ -82,3 +82,32 @@ $(".header-shopping-cart-toggler").on({
         headerShoppingCart.hide();
     }
 });
+
+// ***********************************************************************
+// header behaviour on scroll
+// ***********************************************************************
+
+var lastScrollTop = 0;
+
+$(window).scroll(function (event) {
+
+    var st = $(this).scrollTop();
+    var windowWidth = $(window).width();
+
+    if (st > lastScrollTop) {
+
+        // downscroll code
+
+    }
+
+    else {
+
+        // upscroll code
+
+        console.log("up");
+
+    }
+
+    lastScrollTop = st;
+
+});
