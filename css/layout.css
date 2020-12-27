@@ -1,5 +1,9 @@
 /* Start of top header styles */
 
+#top-header {
+    overflow-x: hidden;
+}
+
 .top-header-container {
     font-size: 0.55rem;
     font-weight: 700;
@@ -30,10 +34,12 @@
 /* Start of mid header styles */
 
 #mid-header {
-    position: sticky;
+    position: sticky !important;
+    position: -webkit-sticky;
     top: 0;
     border-bottom: 2px solid var(--mainPink);
     z-index: 400;
+    background-color: white;
 }
 
 .logo-and-sidebar-container .sidebar-button {
@@ -313,7 +319,6 @@
 
 #footer {
     font-size: 0.85rem;
-    min-width: 100%;
 }
 
 .top-footer-section {
