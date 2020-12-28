@@ -1,4 +1,4 @@
-@import url("F/common.css");
+@import url("./common.css");
 /* ****************************************************************** */
 
 /* Start of main header and small styles */
@@ -381,6 +381,18 @@
 
 .offer-card {
   width: 190px !important;
+  height: 345px !important;
+  max-height: 345px;
+  border: 1px solid var(--cardBorderColor) !important;
+  border-radius: 5px !important;
+  padding: 15px 12px;
+  position: relative;
+  background-color: white;
+  position: relative;
+}
+
+.slider-card {
+  width: 100% !important;
   height: 345px !important;
   max-height: 345px;
   border: 1px solid var(--cardBorderColor) !important;
@@ -1951,6 +1963,15 @@ iframe {
 
 .section-header-row, .section-content-row {
   border-radius: 5px;
+}
+
+.section-content-row {
+  overflow-x: auto;
+  cursor: grabbing;
+}
+
+.section-content-row::-webkit-scrollbar {
+  display: none;
 }
 
 /* End of section rows styles */
