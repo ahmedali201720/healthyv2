@@ -454,6 +454,7 @@
     border-left: 2px solid var(--mainPink);
     border-bottom: 2px solid var(--mainPink);
     transition: height 5s ease-in-out;
+    z-index: 1000;
 }
 
 .main-sub-menu-link {

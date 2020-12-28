@@ -1987,24 +1987,35 @@ iframe {
   transform: scaleX(1.03) scaleY(1.05);
 }
 
+.banner-carousel-control-prev-icon {
+  top: 50%;
+  left: 0%;
+}
+
+.banner-carousel-control-next-icon {
+  top: 50%;
+  right: 0%;
+}
+
 .carousel-control-prev-icon {
+  position: absolute;
   top: 50%;
   left: 0%;
   transform: translateY(-50%);
 }
 
 .carousel-control-next-icon {
+  position: absolute;
   top: 50%;
   right: 0%;
   transform: translateY(-50%);
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-  height: 40px !important;
-  width: 25px !important;
+  height: 32px !important;
+  width: 30px !important;
   outline: black;
   background-size: 100%, 100%;
-  border: 2px solid var(--mainPink);
   background-color: var(--mainPink) !important;
 }
 

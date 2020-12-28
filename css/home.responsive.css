@@ -243,7 +243,7 @@
         height: 300px;
     }
     .offer-card {
-        width: 95% !important;
+        width: 97% !important;
         height: 345px !important;
         max-height: 360px !important;
     }
@@ -679,7 +679,7 @@
         overflow: auto;
     }
     .card-original-price-text {
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 600;
     }
     /* End of offer card styles */
@@ -752,6 +752,10 @@
         font-weight: 700;
         line-height: 19px;
         overflow: auto;
+    }
+    .card-original-price-text {
+        font-size: 12px;
+        font-weight: 600;
     }
     /* End of offer card styles */
     .feedback-details .feedback-name {
