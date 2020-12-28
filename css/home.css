@@ -1967,7 +1967,7 @@ iframe {
 
 .section-content-row {
   overflow-x: auto;
-  cursor: grabbing;
+  cursor: auto;
 }
 
 .section-content-row::-webkit-scrollbar {
