@@ -657,292 +657,1635 @@
 
     <!-- Start of demo section -->
 
+
     <section id="demo">
 
-        <div class="container-fluid offers-section my-5">
+        <div class="container-fluid offers-section">
 
             <!-- labels of section -->
             <div
                 class="row section-header-row bg-main flex-lg-row flex-column justify-content-lg-between align-items-sm-center justify-content-sm-around align-items-center px-2">
-                <div class="section-labels text-md-right text-center py-2">
-                    <p class="main-label d-md-inline-block d-block text-white mb-0">عروض و تخفيضات</p>
-                    <p class="sub-label d-md-inline-block d-block text-white mb-0">( عروض وتخفيضات مش بتخلص من عندنا )
+                <div class="section-labels text-md-right text-center">
+                    <p class="main-label d-md-inline-block d-block text-white mb-0">افتتراضى</p>
+                    <p class="sub-label d-md-inline-block d-block text-white mb-0">( تسوق باختيار منتجات افترا ضية )
                     </p>
                 </div>
                 <a href="cart.html" class="section-button my-1">
-                    <div class="text-lg-left text-center text-wheat">
+                    <div class="text-lg-left text-center">
                         عرض الكل <span class="mx-1">></span>
                     </div>
                 </a>
             </div>
 
-            <!-- Offers Section -->
+            <!-- dummy products -->
+            <div class="row partners-section text-center mb-5">
 
-            <div class="row bg-white">
 
-                <div class="section-content-row px-2 py-3 d-flex justify-content-start bg-white">
+                <!-- lg screen -->
+                <div id="offers-lg-slider" class="carousel slide text-center w-100 d-lg-block d-none"
+                    data-ride="carousel">
 
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 d-flex justify-content-center">
+                    <!-- carousel indcators -->
+                    <ol class="carousel-indicators">
+                        <li class="active mx-1" data-target="#offers-lg-slider" data-slide-to="0"></li>
+                        <li class="mx-1" data-target="#offers-lg-slider" data-slide-to="1"></li>
+                        <li class="mx-1" data-target="#offers-lg-slider" data-slide-to="2"></li>
+                    </ol>
 
-                        <div class="text-center slider-card">
-                            <a class="expand-arrows" href="#" data-toggle="modal" data-target="#productModal">
-                                <i class="fa fa-expand-arrows-alt"></i>
-                            </a>
-                            <div class="card-badge">
-                                جديد
-                            </div>
-                            <a href="single-product.html">
-                                <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
-                                    alt="Card image cap">
+                    <!-- carousel inner -->
+                    <div class="carousel-inner position-relative">
 
-                            </a>
-                            <div class="card-body section-card-body p-0 text-center">
-                                <div class="card-title section-card-title text-right">
-                                    عرض عصير قراصيا 250 مل 1+1 هدية
-                                </div>
-                                <div class="card-text section-card-text price-text text-right my-1">30.00
-                                    <span>EGP</span>
-                                    <del class="d-inline-block">
-                                        <div
-                                            class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
-                                            55.00 <span>EGP</span>
+                        <div class="carousel-item active">
+
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
                                         </div>
-                                    </del>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
+
                             </div>
-                            <!-- Appears when product not added to cart -->
-                            <div class="section-card-button text-center">
-                                أضف للسلة
-                            </div>
-                            <!-- appears when product previously added to cart -->
-                            <div class="section-card-control-wrapper px-1">
-                                <!-- Increment to cart + quantity -->
-                                <div
-                                    class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
-                                    <i class="fa fa-plus mx-1"></i>
-                                    <p class="product-quantity-in-card mb-0">2</p>
-                                </div>
-                                <!-- Decrement from cart -->
-                                <div
-                                    class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
-                                    <i class="fa fa-minus"></i>
-                                </div>
-                            </div>
+
                         </div>
+
+                        <div class="carousel-item brand-row bg-white">
+
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
+                                        </div>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item brand-row bg-white">
+
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
+                                        </div>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- carousel links -->
+                        <a href="#offers-lg-slider" class="carousel-control-prev" role="button" data-slide="prev"
+                            style="width: 25px">
+                            <span class="carousel-control-prev-icon position-absolute"></span>
+                        </a>
+                        <a href="#offers-lg-slider" class="carousel-control-next" role="button" data-slide="next"
+                            style="width: 25px">
+                            <span class="carousel-control-next-icon position-absolute"></span>
+                        </a>
 
                     </div>
 
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 d-flex justify-content-center">
+                </div>
 
-                        <div class="text-center slider-card">
-                            <a class="expand-arrows" href="#" data-toggle="modal" data-target="#productModal">
-                                <i class="fa fa-expand-arrows-alt"></i>
-                            </a>
-                            <div class="card-badge">
-                                جديد
-                            </div>
-                            <a href="single-product.html">
-                                <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
-                                    alt="Card image cap">
+                <!-- md screen -->
+                <div id="offers-md-slider" class="carousel slide text-center w-100 d-lg-none d-md-block d-none"
+                    data-ride="carousel">
 
-                            </a>
-                            <div class="card-body section-card-body p-0 text-center">
-                                <div class="card-title section-card-title text-right">
-                                    عرض عصير قراصيا 250 مل 1+1 هدية
-                                </div>
-                                <div class="card-text section-card-text price-text text-right my-1">30.00
-                                    <span>EGP</span>
-                                    <del class="d-inline-block">
-                                        <div
-                                            class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
-                                            55.00 <span>EGP</span>
+                    <!-- carousel indcators -->
+                    <ol class="carousel-indicators">
+                        <li class="active mx-1" data-target="#offers-slider" data-slide-to="0"></li>
+                        <li class="mx-1" data-target="#offers-md-slider" data-slide-to="1"></li>
+                        <li class="mx-1" data-target="#offers-md-slider" data-slide-to="2"></li>
+                        <li class="mx-1" data-target="#offers-md-slider" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- carousel inner -->
+                    <div class="carousel-inner position-relative">
+
+                        <div class="carousel-item active">
+
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
                                         </div>
-                                    </del>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
+
                             </div>
-                            <!-- Appears when product not added to cart -->
-                            <div class="section-card-button text-center">
-                                أضف للسلة
-                            </div>
-                            <!-- appears when product previously added to cart -->
-                            <div class="section-card-control-wrapper px-1">
-                                <!-- Increment to cart + quantity -->
-                                <div
-                                    class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
-                                    <i class="fa fa-plus mx-1"></i>
-                                    <p class="product-quantity-in-card mb-0">2</p>
-                                </div>
-                                <!-- Decrement from cart -->
-                                <div
-                                    class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
-                                    <i class="fa fa-minus"></i>
-                                </div>
-                            </div>
+
                         </div>
+
+                        <div class="carousel-item brand-row bg-white">
+
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
+                                        </div>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item brand-row bg-white">
+
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
+                                        </div>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item brand-row bg-white">
+
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
+                                        </div>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- carousel links -->
+                        <a href="#offers-md-slider" class="carousel-control-prev" role="button" data-slide="prev"
+                            style="width: 25px">
+                            <span class="carousel-control-prev-icon position-absolute"></span>
+                        </a>
+                        <a href="#offers-md-slider" class="carousel-control-next" role="button" data-slide="next"
+                            style="width: 25px">
+                            <span class="carousel-control-next-icon position-absolute"></span>
+                        </a>
 
                     </div>
 
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 d-flex justify-content-center">
+                </div>
 
-                        <div class="text-center slider-card">
-                            <a class="expand-arrows" href="#" data-toggle="modal" data-target="#productModal">
-                                <i class="fa fa-expand-arrows-alt"></i>
-                            </a>
-                            <div class="card-badge">
-                                جديد
-                            </div>
-                            <a href="single-product.html">
-                                <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
-                                    alt="Card image cap">
+                <!-- sm screen -->
+                <div id="offers-sm-slider" class="carousel slide text-center w-100 d-md-none d-sm-block d-none"
+                    data-ride="carousel">
 
-                            </a>
-                            <div class="card-body section-card-body p-0 text-center">
-                                <div class="card-title section-card-title text-right">
-                                    عرض عصير قراصيا 250 مل 1+1 هدية
-                                </div>
-                                <div class="card-text section-card-text price-text text-right my-1">30.00
-                                    <span>EGP</span>
-                                    <del class="d-inline-block">
-                                        <div
-                                            class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
-                                            55.00 <span>EGP</span>
+                    <!-- carousel indcators -->
+                    <ol class="carousel-indicators">
+                        <li class="active mx-1" data-target="#offers-slider" data-slide-to="0"></li>
+                        <li class="mx-1" data-target="#offers-sm-slider" data-slide-to="1"></li>
+                        <li class="mx-1" data-target="#offers-sm-slider" data-slide-to="2"></li>
+                        <li class="mx-1" data-target="#offers-sm-slider" data-slide-to="3"></li>
+                        <li class="mx-1" data-target="#offers-sm-slider" data-slide-to="4"></li>
+                        <li class="mx-1" data-target="#offers-sm-slider" data-slide-to="5"></li>
+                    </ol>
+
+                    <!-- carousel inner -->
+                    <div class="carousel-inner position-relative">
+
+                        <div class="carousel-item active">
+
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
                                         </div>
-                                    </del>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
+
                             </div>
-                            <!-- Appears when product not added to cart -->
-                            <div class="section-card-button text-center">
-                                أضف للسلة
-                            </div>
-                            <!-- appears when product previously added to cart -->
-                            <div class="section-card-control-wrapper px-1">
-                                <!-- Increment to cart + quantity -->
-                                <div
-                                    class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
-                                    <i class="fa fa-plus mx-1"></i>
-                                    <p class="product-quantity-in-card mb-0">2</p>
-                                </div>
-                                <!-- Decrement from cart -->
-                                <div
-                                    class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
-                                    <i class="fa fa-minus"></i>
-                                </div>
-                            </div>
+
                         </div>
+
+                        <div class="carousel-item active">
+
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
+                                        </div>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item active">
+
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
+                                        </div>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item active">
+
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
+                                        </div>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item brand-row bg-white">
+
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
+                                        </div>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item brand-row bg-white">
+
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
+                                        </div>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- carousel links -->
+                        <a href="#offers-sm-slider" class="carousel-control-prev" role="button" data-slide="prev"
+                            style="width: 25px">
+                            <span class="carousel-control-prev-icon position-absolute"></span>
+                        </a>
+                        <a href="#offers-sm-slider" class="carousel-control-next" role="button" data-slide="next"
+                            style="width: 25px">
+                            <span class="carousel-control-next-icon position-absolute"></span>
+                        </a>
 
                     </div>
 
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 d-flex justify-content-center">
+                </div>
 
-                        <div class="text-center slider-card">
-                            <a class="expand-arrows" href="#" data-toggle="modal" data-target="#productModal">
-                                <i class="fa fa-expand-arrows-alt"></i>
-                            </a>
-                            <div class="card-badge">
-                                جديد
-                            </div>
-                            <a href="single-product.html">
-                                <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
-                                    alt="Card image cap">
+                <!-- xs screen -->
+                <div id="offers-slider" class="carousel slide text-center w-100 d-sm-none d-block" data-ride="carousel">
 
-                            </a>
-                            <div class="card-body section-card-body p-0 text-center">
-                                <div class="card-title section-card-title text-right">
-                                    عرض عصير قراصيا 250 مل 1+1 هدية
-                                </div>
-                                <div class="card-text section-card-text price-text text-right my-1">30.00
-                                    <span>EGP</span>
-                                    <del class="d-inline-block">
-                                        <div
-                                            class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
-                                            55.00 <span>EGP</span>
+                    <!-- carousel indcators -->
+                    <ol class="carousel-indicators">
+                        <li class="active mx-1" data-target="#offers-slider" data-slide-to="0"></li>
+                        <li class="mx-1" data-target="#offers-slider" data-slide-to="1"></li>
+                        <li class="mx-1" data-target="#offers-slider" data-slide-to="2"></li>
+                        <li class="mx-1" data-target="#offers-slider" data-slide-to="3"></li>
+                        <li class="mx-1" data-target="#offers-slider" data-slide-to="4"></li>
+                        <li class="mx-1" data-target="#offers-slider" data-slide-to="5"></li>
+                        <li class="mx-1" data-target="#offers-slider" data-slide-to="6"></li>
+                        <li class="mx-1" data-target="#offers-slider" data-slide-to="7"></li>
+                        <li class="mx-1" data-target="#offers-slider" data-slide-to="8"></li>
+                        <li class="mx-1" data-target="#offers-slider" data-slide-to="9"></li>
+                        <li class="mx-1" data-target="#offers-slider" data-slide-to="10"></li>
+                        <li class="mx-1" data-target="#offers-slider" data-slide-to="12"></li>
+                    </ol>
+
+                    <!-- carousel inner -->
+                    <div class="carousel-inner position-relative">
+
+                        <div class="carousel-item active">
+
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
                                         </div>
-                                    </del>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
+
                             </div>
-                            <!-- Appears when product not added to cart -->
-                            <div class="section-card-button text-center">
-                                أضف للسلة
-                            </div>
-                            <!-- appears when product previously added to cart -->
-                            <div class="section-card-control-wrapper px-1">
-                                <!-- Increment to cart + quantity -->
-                                <div
-                                    class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
-                                    <i class="fa fa-plus mx-1"></i>
-                                    <p class="product-quantity-in-card mb-0">2</p>
-                                </div>
-                                <!-- Decrement from cart -->
-                                <div
-                                    class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
-                                    <i class="fa fa-minus"></i>
-                                </div>
-                            </div>
+
                         </div>
 
-                    </div>
+                        <div class="carousel-item">
 
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 d-flex justify-content-center">
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
 
-                        <div class="text-center slider-card">
-                            <a class="expand-arrows" href="#" data-toggle="modal" data-target="#productModal">
-                                <i class="fa fa-expand-arrows-alt"></i>
-                            </a>
-                            <div class="card-badge">
-                                جديد
-                            </div>
-                            <a href="single-product.html">
-                                <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
-                                    alt="Card image cap">
-
-                            </a>
-                            <div class="card-body section-card-body p-0 text-center">
-                                <div class="card-title section-card-title text-right">
-                                    عرض عصير قراصيا 250 مل 1+1 هدية
-                                </div>
-                                <div class="card-text section-card-text price-text text-right my-1">30.00
-                                    <span>EGP</span>
-                                    <del class="d-inline-block">
-                                        <div
-                                            class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
-                                            55.00 <span>EGP</span>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
                                         </div>
-                                    </del>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
+
                             </div>
-                            <!-- Appears when product not added to cart -->
-                            <div class="section-card-button text-center">
-                                أضف للسلة
-                            </div>
-                            <!-- appears when product previously added to cart -->
-                            <div class="section-card-control-wrapper px-1">
-                                <!-- Increment to cart + quantity -->
-                                <div
-                                    class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
-                                    <i class="fa fa-plus mx-1"></i>
-                                    <p class="product-quantity-in-card mb-0">2</p>
-                                </div>
-                                <!-- Decrement from cart -->
-                                <div
-                                    class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
-                                    <i class="fa fa-minus"></i>
-                                </div>
-                            </div>
+
                         </div>
 
-                    </div>
+                        <div class="carousel-item">
 
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
+                                        </div>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item ">
+
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
+                                        </div>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item">
+
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
+                                        </div>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item">
+
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
+                                        </div>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item">
+
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
+                                        </div>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item">
+
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
+                                        </div>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item">
+
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
+                                        </div>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item">
+
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
+                                        </div>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item brand-row bg-white">
+
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
+                                        </div>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item brand-row bg-white">
+
+                            <div
+                                class="row section-content-row d-flex justify-content-sm-start justify-content-center px-3 py-3 bg-white">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 px-0 mb-3 d-flex justify-content-center">
+                                    <div class="section-card text-center offer-card" id="10">
+                                        <a class="expand-arrows" href="#" data-toggle="modal"
+                                            data-target="#productModal">
+                                            <i class="fa fa-expand-arrows-alt"></i>
+                                        </a>
+                                        <div class="card-badge">
+                                            جديد
+                                        </div>
+                                        <a href="single-product.html">
+                                            <img class="card-img section-card-img" src="./assets/ht-images/offer1.jpg"
+                                                alt="Card image cap">
+
+                                        </a>
+                                        <div class="card-body section-card-body p-0 text-center">
+                                            <div class="card-title section-card-title text-right">
+                                                عرض عصير قراصيا 250 مل 1+1 هدية
+                                            </div>
+                                            <div class="card-text section-card-text price-text text-right my-1">30.00
+                                                <span>EGP</span>
+                                                <del class="d-inline-block">
+                                                    <div
+                                                        class="card-text section-card-text card-original-price-text text-muted text-right my-1 px-0">
+                                                        55.00 <span>EGP</span>
+                                                    </div>
+                                                </del>
+                                            </div>
+                                        </div>
+                                        <!-- Appears when product not added to cart -->
+                                        <div class="section-card-button text-center">
+                                            أضف للسلة
+                                        </div>
+                                        <!-- appears when product previously added to cart -->
+                                        <div class="section-card-control-wrapper px-1">
+                                            <!-- Increment to cart + quantity -->
+                                            <div
+                                                class="card-increment-btn text-center d-flex justify-content-between align-items-center px-3">
+                                                <i class="fa fa-plus mx-1"></i>
+                                                <p class="product-quantity-in-card mb-0">2</p>
+                                            </div>
+                                            <!-- Decrement from cart -->
+                                            <div
+                                                class="card-decrement-btn text-center d-flex justify-content-center align-items-center mx-1">
+                                                <i class="fa fa-minus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- carousel links -->
+                        <a href="#offers-slider" class="carousel-control-prev" role="button" data-slide="prev"
+                            style="width: 25px">
+                            <span class="carousel-control-prev-icon position-absolute"></span>
+                        </a>
+                        <a href="#offers-slider" class="carousel-control-next" role="button" data-slide="next"
+                            style="width: 25px">
+                            <span class="carousel-control-next-icon position-absolute"></span>
+                        </a>
+
+                    </div>
 
                 </div>
 
             </div>
 
-
-        </div>
-
         </div>
 
     </section>
+
 
     <!-- End of demo section -->
 
