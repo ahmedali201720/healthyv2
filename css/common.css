@@ -53,6 +53,7 @@ body {
 
 body ::-webkit-scrollbar {
     width: 7px;
+    appearance: none;
 }
 
 /* Track */
