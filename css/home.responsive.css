@@ -190,7 +190,7 @@
         flex-direction: column;
     }
     html {
-        overflow-x: scroll;
+        overflow-x: visible;
     }
 }
 
