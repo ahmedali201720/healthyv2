@@ -9,7 +9,7 @@ $(document).ready(function () {
         autoplayTimeout: 7000,
         responsive: {
             0: {
-                items: 1.25
+                items: 1.2
             },
 
             600: {
