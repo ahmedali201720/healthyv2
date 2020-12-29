@@ -1974,16 +1974,6 @@ iframe {
   transform: scaleX(1.03) scaleY(1.05);
 }
 
-.banner-carousel-control-prev-icon {
-  top: 50%;
-  left: 0%;
-}
-
-.banner-carousel-control-next-icon {
-  top: 50%;
-  right: 0%;
-}
-
 .carousel-control-prev-icon {
   position: absolute;
   top: 50%;
