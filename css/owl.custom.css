@@ -1,0 +1,23 @@
+.section-carousel {
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.owl-dot {
+    width: 45px;
+    height: 20px;
+    border: 2px solid purple;
+    border-radius: 25px;
+    outline: none !important;
+    transition: all 0.4s ease;
+    background-color: peru !important;
+}
+
+.owl-dot:hover {
+    background-color: purple !important;
+}
+
+.owl-dot:active {
+    background-color: orangered !important;
+}

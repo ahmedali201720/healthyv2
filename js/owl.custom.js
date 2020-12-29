@@ -1,4 +1,4 @@
-$(".carousel").owlCarousel({
+$(".section-carousel").owlCarousel({
     margin: 30,
     loop: false,
     autoplay: true,
@@ -8,13 +8,13 @@ $(".carousel").owlCarousel({
             items: 1
         },
         600: {
-            items: 2
+            items: 1
         },
         768: {
-            items: 3
+            items: 2
         },
         992: {
-            items: 4
+            items: 3
         },
         1200: {
             items: 6
