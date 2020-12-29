@@ -36,7 +36,7 @@ html {
 /* General styles for body elements */
 
 body {
-    /* Remove min-width:fit-content-property; to eliminate overflow problem */
+    /* Remove min-width:fit-content-property; to eliminate overflow */
     margin: 0px;
     padding: 0px;
     height: 100%;

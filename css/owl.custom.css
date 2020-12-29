@@ -1,7 +1,10 @@
-.section-carousel {
-    display: flex;
-    max-width: 100%;
-    overflow: hidden;
+.owl-stage-outer {
+    direction: ltr;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 30px;
 }
 
 .owl-dot {

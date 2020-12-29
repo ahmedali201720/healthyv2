@@ -1,7 +1,7 @@
 $(".section-carousel").owlCarousel({
     margin: 30,
     loop: false,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 5000,
     responsive: {
         0: {
@@ -17,7 +17,7 @@ $(".section-carousel").owlCarousel({
             items: 3
         },
         1200: {
-            items: 6
+            items: 5.5
         }
     }
 });
