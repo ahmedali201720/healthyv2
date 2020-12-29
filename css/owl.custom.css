@@ -4,23 +4,24 @@
 
 .owl-dots {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .owl-dot {
-    width: 45px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border: 2px solid purple;
-    border-radius: 25px;
+    border-radius: 50%;
     outline: none !important;
     transition: all 0.4s ease;
-    background-color: peru !important;
+    background-color: rgb(189, 85, 189) !important;
+    margin: 0 3px;
 }
 
 .owl-dot:hover {
-    background-color: purple !important;
+    background-color: var(--mainPink) !important;
 }
 
 .owl-dot:active {
-    background-color: orangered !important;
+    background-color: var(--mainPink) !important;
 }
