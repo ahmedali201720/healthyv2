@@ -3,6 +3,8 @@ $(document).ready(function () {
     $(".section-carousel").owlCarousel({
         margin: 30,
         loop: true,
+        mouseDrag: true,
+        touchDrag: true,
         autoplay: false,
         autoplayTimeout: 7000,
         responsive: {
@@ -22,13 +24,47 @@ $(document).ready(function () {
             },
             1200: {
                 items: 4
+            },
+            1300: {
+                items: 5
+            },
+            1500: {
+                items: 6
             }
         }
     });
 
-    var owlItems = $(".section-carousel .owl-item").length;
-    console.log("we are " + owlItems + " owl items.")
+    $(".brands-carousel").owlCarousel({
+        margin: 30,
+        loop: true,
+        mouseDrag: true,
+        touchDrag: true,
+        autoplay: false,
+        autoplayTimeout: 7000,
+        responsive: {
+            0: {
+                items: 1.5
+            },
 
-    $(".section-carousel").trigger("to.owl.carousel", [1, 1]);
+            600: {
+                items: 2.5
+            },
+
+            768: {
+                items: 3
+            },
+            992: {
+                items: 4
+            },
+            1200: {
+                items: 6
+            },
+            1400: {
+                items: 7
+            }
+        }
+    });
+
+    $(".section-carousel").trigger("to.owl.carousel", [3, 1]);
 
 });
