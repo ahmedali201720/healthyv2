@@ -1,5 +1,4 @@
 var lastScrollTop = 0;
-var st = 0;
 
 const mainHeaderContainer = $(".main-container");
 const mainHeaderNavbar = $(".main-navbar");

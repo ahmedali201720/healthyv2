@@ -5,6 +5,8 @@ $(document).ready(function () {
         loop: true,
         mouseDrag: true,
         touchDrag: true,
+        nav: true,
+        navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
         autoplay: false,
         autoplayTimeout: 7000,
         responsive: {
@@ -39,6 +41,8 @@ $(document).ready(function () {
         loop: true,
         mouseDrag: true,
         touchDrag: true,
+        nav: true,
+        navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
         autoplay: false,
         autoplayTimeout: 7000,
         responsive: {

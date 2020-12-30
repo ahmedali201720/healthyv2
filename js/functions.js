@@ -90,38 +90,49 @@ function runAudio(audioElement) {
 // *******************************************************************************
 
 function handleWindowScroll(st) {
-    $(".user-options-container , .small-user-options-container , .shopping-cart-details-container , .small-shopping-cart-details-container").hide(100);
+    var windowWidth = $(window).width();
+    $(".user-options-container , .shopping-cart-details-container").hide(100);
     if (st > lastScrollTop) {
-        // downscroll code
-        // for asolute cart
-        $(".absolute-cart-text").hide();
-        $(".absolute-cart").css({ 'border-radius': '50%', 'text-align': 'center' }).width(85).height(85);
-        $(".absolute-cart-items").css({ 'left': '40%', });
+        // scroll down code
         console.log("scroll down occurs");
+        $(".absolute-cart-text").hide();
+        if (windowWidth < 600) {
+            $(".absolute-cart").css({ 'width': '90px', 'height': '90px', 'border-radius': '50%', 'text-align': 'center' });
+        }
+        else if (windowWidth >= 600 && windowWidth < 768) {
+            $(".absolute-cart").css({ 'width': '95px', 'height': '95px', 'border-radius': '50%', 'text-align': 'center' });
+        }
+        else if (windowWidth >= 768 && windowWidth < 992) {
+            $(".absolute-cart").css({ 'width': '100px', 'height': '100px', 'border-radius': '50%', 'text-align': 'center' });
+        }
+        else if (windowWidth >= 992 && windowWidth < 1200) {
+            $(".absolute-cart").css({ 'width': '110px', 'height': '110px', 'border-radius': '50%', 'text-align': 'center' });
+        }
+        else if (windowWidth >= 1200) {
+            $(".absolute-cart").css({ 'width': '110px', 'height': '110px', 'border-radius': '50%', 'text-align': 'center' });
+        }
     }
     else {
-        // upscroll code
-        // for absolute cart
-        $(".absolute-cart-text").show();
-        $(".absolute-cart").css({ 'border-radius': '35px', 'text-align': 'center' }).width(170).height(70);
-        $(".absolute-cart-items").css({ 'left': '40%', });
+        // scroll up code
         console.log("scroll up occurs");
+        $(".absolute-cart-text").show();
+        if (windowWidth < 600) {
+            $(".absolute-cart").css({ 'width': '46%', 'height': '65px', 'border-radius': '35px', 'text-align': 'center' });
+        }
+        else if (windowWidth >= 600 && windowWidth < 768) {
+            $(".absolute-cart").css({ 'width': '25%', 'height': '85px', 'border-radius': '35px', 'text-align': 'center' });
+        }
+        else if (windowWidth >= 768 && windowWidth < 992) {
+            $(".absolute-cart").css({ 'width': '20%', 'height': '85px', 'border-radius': '35px', 'text-align': 'center' });
+        }
+        else if (windowWidth >= 992 && windowWidth < 1200) {
+            $(".absolute-cart").css({ 'width': '20%', 'height': '85px', 'border-radius': '35px', 'text-align': 'center' });
+        }
+        else if (windowWidth >= 1200) {
+            $(".absolute-cart").css({ 'width': '15%', 'height': '85px', 'border-radius': '35px', 'text-align': 'center' });
+        }
     }
     lastScrollTop = st;
-}
-
-// ********************************************************************************
-
-function handleAbsoluteCartClick() {
-    $(".absolute-cart-text").toggle();
-    if ($(".absolute-cart-text").css("display") === "none") {
-        $(".absolute-cart").css({ 'border-radius': '50%', 'text-align': 'center' }).width(85).height(85);
-        $(".absolute-cart-items").css({ 'left': '40%', })
-    }
-    else {
-        $(".absolute-cart").css({ 'border-radius': '35px', 'text-align': 'center' }).width(170).height(70);
-        $(".absolute-cart-items").css({ 'left': '40%', });
-    }
 }
 
 // ********************************************************************************

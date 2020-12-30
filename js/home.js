@@ -81,28 +81,10 @@ $("div:not(.blank-user)").on({
 // ********************************************************************
 
 
-$(window).scroll(function (event) {
+$('body').scroll(function (event) {
     st = $(this).scrollTop();
     handleWindowScroll(st);
 });
-
-$(".absolute-cart").click(function () {
-    handleAbsoluteCartClick();
-})
-
-// ********************************************************************
-function openNav() {
-    document.getElementById("small-navbar").style.height = "100%";
-    document.getElementById("small-navbar").style.paddingTop = "60px";
-}
-// ********************************************************************
-// Scripts for collapse button navbar div (open and close)
-// ********************************************************************
-function closeNav() {
-    document.getElementById("small-navbar").style.height = "0px";
-    document.getElementById("small-navbar").style.padding = "0px";
-}
-// ********************************************************************
 
 // ********************************************************************
 // JQuery script to toggle between login and register modals
