@@ -91,7 +91,7 @@
     }
     /* Styles of absolute cart */
     .absolute-cart {
-        width: 45%;
+        width: 46%;
         height: 60px;
         bottom: 5%;
         left: 3%;
@@ -104,7 +104,8 @@
     }
     .absolute-cart .cart-items {
         font-size: 11px;
-        padding: 3px;
+        top: -45%;
+        left: 55%;
     }
     /* End of absolute cart styles */
     /* Start of product modal styles */
@@ -285,8 +286,8 @@
     }
     /* Styles of absolute cart */
     .absolute-cart {
-        width: 35%;
-        height: 60px;
+        width: 25%;
+        height: 65px;
         bottom: 5%;
         left: 3%;
         font-size: 11px;
@@ -298,7 +299,8 @@
     }
     .absolute-cart .cart-items {
         font-size: 11px;
-        padding: 3px;
+        top: -40%;
+        left: 55%;
     }
     /* End of absolute cart styles */
     /* user options contaniner styles */
@@ -474,7 +476,7 @@
     }
     /* Styles of absolute cart */
     .absolute-cart {
-        width: 30%;
+        width: 20%;
         height: 70px;
         bottom: 5%;
         left: 3%;
@@ -487,7 +489,8 @@
     }
     .absolute-cart .cart-items {
         font-size: 11px;
-        padding: 3px;
+        top: -30%;
+        left: 50%;
     }
     /* End of absolute cart styles */
     /* Start of product modal styles */
@@ -594,7 +597,7 @@
     }
     /* Styles of absolute cart */
     .absolute-cart {
-        width: 35%;
+        width: 20%;
         height: 80px;
         bottom: 5%;
         left: 3%;
@@ -752,6 +755,26 @@
     #month, #year {
         width: 45%;
     }
+    /* Styles of absolute cart */
+    .absolute-cart {
+        width: 15%;
+        height: 80px;
+        bottom: 5%;
+        left: 3%;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+    .absolute-cart .fa-shopping-cart {
+        font-size: 40px !important;
+    }
+    .absolute-cart .cart-items {
+        font-size: 15px;
+        font-weight: 600;
+        top: -21%;
+        left: 70%;
+    }
+    /* End of absolute cart styles */
 }
 
 @media only screen and (min-width: 1300px) {
