@@ -37,7 +37,7 @@
     position: sticky !important;
     position: -webkit-sticky;
     top: 0;
-    border-bottom: 2px solid var(--mainPink);
+    box-shadow: 3px 3px 10px gray;
     z-index: 400;
     background-color: white;
 }
@@ -102,13 +102,13 @@
 }
 
 .mid-header-user-container .shopping-cart-summary .fa-shopping-cart {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: var(--mainPink);
 }
 
 .mid-header-user-container .shopping-cart-summary .fa-shopping-cart .cart-items-number {
     position: absolute;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     font-weight: 600;
     color: white;
     border: 2px solid white;
